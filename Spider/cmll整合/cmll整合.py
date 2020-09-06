@@ -52,7 +52,7 @@ for j in range(42):
     else:
         stralg = []
         for a in alg:
-            urla = 'alg/index.html?alg=%s&title=%s&stage=CMLL&type=alg'
+            urla = 'alg/index.html?alg=%s&title=%s&stage=CMLL&type=alg&scheme=yellowtop'
 
             title_u = urllib.parse.quote(title)
             alg_u = a.replace(' ', '_').replace("'", '-')

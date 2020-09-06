@@ -184,6 +184,14 @@ algxControllers.controller("algxController", [
         custom: false,
       },
       {
+        id: "yellowtop",
+        name: "Yellow Top",
+        type: "Color Scheme",
+        scheme: "gorbwy",
+        display: "Japanese",
+        custom: false,
+      },
+      {
         id: "custom",
         name: "Custom:",
         type: "Color Scheme",
