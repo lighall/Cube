@@ -33,7 +33,7 @@ for u in url_list:
                 i = i+'\n'
                 i = re.sub('//\s+', ' //', i)
             solution += i
-        url = 'https://alg.cubing.net/?setup=%s&alg=%s&title=%s'
+        url = 'alg/index.html?setup=%s&alg=%s&title=%s'
         title_u = urllib.parse.quote(title)
         scramble_u = scramble.replace(' ', '_').replace("'", '-')
         scramble_u = urllib.parse.quote(scramble_u)

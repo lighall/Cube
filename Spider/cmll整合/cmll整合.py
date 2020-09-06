@@ -1,14 +1,15 @@
 from lxml import etree
 import re
 import requests
+import urllib.parse
 
 
 # config
 getimg = False
 # show，showfull，print
-htmltype = 'showfull'
+htmltype = 'show'
 
-with open('cmll原始', 'r') as f:
+with open('cmll原始.htm', 'r') as f:
     str_html = f.read()
 tree = etree.HTML(str_html)
 c = 0
@@ -28,12 +29,37 @@ for j in range(42):
     alg = []
     emalg = i.xpath('.//li//text()')[:1]
     if htmltype == 'showfull':
-        emalg = i.xpath('.//li//text()')
+        if title.startswith('L'):
+            emalg = i.xpath('.//li//text()')
+        else:
+            while True:
+                try:
+                    urld = i.xpath('.//li//a/@href')[-1]
+                    urld = 'http://www.speedcubedb.com/' + urld
+                    r = requests.get(urld, timeout=5)
+                    dtree = etree.HTML(r.text)
+                    emalg = dtree.xpath('//tr/td[1]/text()')
+                    break
+                except:
+                    pass
+        print('%s detail' % j)
     for a in emalg:
         a = re.sub('^\s+|\s+$', '', a)
         if a != '' and a != 'More Algorithms':
             alg.append(a)
-    alg = '<br>'.join(alg)
+    if htmltype == 'print':
+        alg = '<br>'.join(alg)
+    else:
+        stralg = []
+        for a in alg:
+            urla = 'alg/index.html?alg=%s&title=%s&stage=CMLL&type=alg'
+
+            title_u = urllib.parse.quote(title)
+            alg_u = a.replace(' ', '_').replace("'", '-')
+            setup = []
+            stralg.append('<a href ="%s" target="_blank">%s</a>' % (
+                urla % (alg_u, title_u), a))
+        alg = '<br>'.join(stralg)
     # 打印版本做是当缩减保证a4可以打印下
     if htmltype == 'print':
         title = title.replace(' Commutator', '').replace(
@@ -45,6 +71,7 @@ for j in range(42):
         r = requests.get(img)
         with open('img/%s.png' % imgc, 'wb') as f:
             f.write(r.content)
+        print('%s image' % j)
     td += """
     <td valign = 'top'>
         <img src = 'img/%s.png' >
@@ -70,7 +97,7 @@ html = """
 <style type="text/css">
     td {
         padding: 3px;
-        width: 230px;
+        width: 250px;
         font-size: 12;
     }
     img {
