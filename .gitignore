@@ -1,3 +1,2 @@
 /Spider/*/*.html
-/Spider/*/img/*.png
-!/Spider/*/img/favicon.png
+/Spider/*/img/cmll/*.png

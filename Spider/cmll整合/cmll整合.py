@@ -69,12 +69,12 @@ for j in range(42):
     # 大多情况不需要重新获取图片
     if getimg:
         r = requests.get(img)
-        with open('img/%s.png' % imgc, 'wb') as f:
+        with open('img/cmll/%s.png' % imgc, 'wb') as f:
             f.write(r.content)
         print('%s image' % j)
     td += """
     <td valign = 'top'>
-        <img src = 'img/%s.png' >
+        <img src = 'img/cmll/%s.png' >
         <br>
         <b>%s</b>
         <br>
