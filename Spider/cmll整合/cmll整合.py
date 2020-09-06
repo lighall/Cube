@@ -56,7 +56,13 @@ for j in range(42):
 
             title_u = urllib.parse.quote(title)
             alg_u = a.replace(' ', '_').replace("'", '-')
-            setup = []
+            # setup = []
+            # for s in a.split(' ')[::-1]:
+            #     if s.endswith("'"):
+            #         setup.append(s.replace("'", ''))
+            #     else:
+            #         setup.append(s+"'")
+            # setup = ' '.join(setup).replace(' ', '_').replace("'", '-')
             stralg.append('<a href ="%s" target="_blank">%s</a>' % (
                 urla % (alg_u, title_u), a))
         alg = '<br>'.join(stralg)
