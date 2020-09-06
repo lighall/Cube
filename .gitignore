@@ -1,0 +1,3 @@
+/Spider/*/*.html
+/Spider/*/img/*.png
+!/Spider/*/img/favicon.png
