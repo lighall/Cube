@@ -191,14 +191,14 @@ algxControllers.controller("algxController", [
         display: "Japanese",
         custom: false,
       },
-      {
-        id: "custom",
-        name: "Custom:",
-        type: "Color Scheme",
-        scheme: "grobyw",
-        display: "",
-        custom: true,
-      },
+      // {
+      //   id: "custom",
+      //   name: "Custom:",
+      //   type: "Color Scheme",
+      //   scheme: "grobyw",
+      //   display: "",
+      //   custom: true,
+      // },
     ]);
     $scope.custom_scheme = "";
 
