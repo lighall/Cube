@@ -106,6 +106,7 @@ algxControllers.controller("algxController", [
       { id: "PLL", name: "PLL", group: "Fridrich" },
       { id: "CLS", name: "CLS", group: "MGLS" },
       { id: "ELS", name: "ELS", group: "MGLS" },
+      { id: "SBLS", name: "SBLS", group: "Roux" },
       { id: "L6E", name: "L6E", group: "Roux" },
       { id: "CMLL", name: "CMLL", group: "Roux" },
       { id: "WV", name: "WV", group: "Variation" },
