@@ -3,15 +3,24 @@
 
 # 公式
 ## Roux
-|分组|公式|完整版本|首条版本|打印版本|
-|--|--|--|--|--|
-Roux|SBLS|[查看](SBLSFull.html)|[查看](SBLS.html)
-Roux|CMLL|[查看](CMLLFull.html) |[查看](CMLL.html)|[打印](CMLLPrint.html)
-Roux|L6E|[查看](L6EFull.html)|[查看](L6E.html)
-CFOP|F2L|[查看](F2LFull.html)|[查看](F2L.html)
-CFOP|OLL|[查看](OLLFull.html)|[查看](OLL.html)
-CFOP|PLL|[查看](PLLFull.html)|[查看](PLL.html)
+- [SBLS](SBLSFull.html)
+- [CMLL](CMLLFull.html)
+- [L6E](L6EFull.html)
 
+## CFOP
+- [F2L](F2L.html)
+- [OLL](OLL.html)
+- [PLL](PLL.html)
+
+## 完整公式
+- [SBLS](SBLSFull.html)
+- [CMLL](CMLLFull.html)
+- [L6E](L6EFull.html)
+- [F2L](F2LFull.html)
+- [OLL](OLLFull.html)
+- [PLL](PLLFull.html)
+## 其他
+- [CMLL打印](CMLLPrint.html)
 # 实例演示
 ## [Roux实例演示](RouxExample.html)  
 
