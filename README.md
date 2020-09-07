@@ -17,20 +17,22 @@
 - [SBLS](SBLSFull.html)
 - [CMLL](CMLLFull.html)
 - [L6E](L6EFull.html)
-- [F2L](F2LFull.html)
-- [OLL](OLLFull.html)
-- [PLL](PLLFull.html)
+- C [F](F2LFull.html)
+[O](OLLFull.html)
+[P](PLLFull.html)
 
-### 其他
+
+### 公式文档
 - [Roux基础公式](RouxBase.html)
 - [魔方根整理CMLL](CubeRootCMLL.html)
 - [Kian Mansour整理CMLL](KianMansourCMLL.html)
-- [CMLL打印](CMLLPrint.html)
-- CubeSkills C
+- [CMLL 打印版本](CMLLPrint.html)
+- [CubeSkills](https://www.cubeskills.com/) C
 [F](/doc/f2l-algorithms-different-slot-positions.pdf)
 [O](/doc/oll-algorithms.pdf)
 [P](/doc/pll-algorithms.pdf)
-公式
+- [gan CFOP](/doc/gancfop.jpg)
+- [最小步](/doc/fmccn.pdf)
 
 ## 说明
 - 个人学习魔方所用的资料，均由网上资料精简汇总整合而成。
