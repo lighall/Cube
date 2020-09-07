@@ -12,7 +12,7 @@ getdetail = False
 htmltype = 'show'
 source = 'OLL'
 
-with open(os.path.abspath('.') + '/Spider/公式整合/source/%s.html' % source, 'r') as f:
+with open(os.path.abspath('.') + '/Spider/Source/%s.html' % source, 'r') as f:
     str_html = f.read()
 tree = etree.HTML(str_html)
 c = 0
