@@ -1,8 +1,10 @@
 # 魔方资料
 ## 实例演示
-- [Kian Mansour](KianMansourExample.html)
-- [Alexander Lau](AlexanderLauExample.html)
-- [Sean Patrick Villanueva](SeanPatrickVillanuevaExample.html)
+- [Kian Mansour](KianMansourExample.html)  
+- [Alexander Lau](AlexanderLauExample.html)  
+- [Sean Patrick Villanueva](SeanPatrickVillanuevaExample.html)  
+
+
 ## 公式
 
 ### Speed Cube DB 首条公式
