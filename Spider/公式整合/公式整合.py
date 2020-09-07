@@ -102,7 +102,7 @@ for j in range(len(e)):
         td = ''
 html = """
 <title>%s</title>
-<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
 <style type="text/css">
     td {
         padding: 3px;
