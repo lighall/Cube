@@ -4,9 +4,9 @@
 # 公式
 
 ## Roux
-- [SBLS](SBLSFull.html)
-- [CMLL](CMLLFull.html)
-- [L6E](L6EFull.html)
+- [SBLS](SBLS.html)
+- [CMLL](CMLL.html)
+- [L6E](L6E.html)
 
 ## CFOP
 - [F2L](F2L.html)
