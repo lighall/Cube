@@ -7,7 +7,7 @@
 
 ### Speed Cube DB 首条公式
 - [SBLS](SBLS.html)
-- [CMLL](CMLL.html) | [A5打印版](CMLLPrint.html)
+- [CMLL](CMLL.html) 丨 [A5打印版](CMLLPrint.html)
 - [L6E](L6E.html)
 - C
 [F](F2L.html)
@@ -25,14 +25,14 @@
 
 ### 其他来源公式
 - [Roux基础公式](RouxBase.html)
-- CMLL |
-[魔方根](CubeRootCMLL.html) | 
+- CMLL 丨
+[魔方根](CubeRootCMLL.html) 丨 
 [Kian Mansour](KianMansourCMLL.html)
-- CFOP |
+- CFOP 丨
 [CubeSkills](https://www.cubeskills.com/) C
 [F](/doc/f2l-algorithms-different-slot-positions.pdf)
 [O](/doc/oll-algorithms.pdf)
-[P](/doc/pll-algorithms.pdf) |
+[P](/doc/pll-algorithms.pdf) 丨
 [GAN说明书](/doc/gancfop.jpg)
 - [最小步](/doc/fmccn.pdf)
 
