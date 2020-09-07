@@ -12,7 +12,7 @@ with open('%sExample.html' % name.replace(' ', ''), mode='w', encoding='utf-8') 
     h = """
         <title>%s Example</title>
         <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico">
-        <a href="/MyCubeData">HOME</a>
+        <a href="/Cube">HOME</a>
         <br><br>
     """ % name
     f.write(h)

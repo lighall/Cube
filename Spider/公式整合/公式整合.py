@@ -120,7 +120,7 @@ html = """
 <br>
 <br>
 <br>
-<a href="/MyCubeData">HOME</a>
+<a href="/Cube">HOME</a>
 <br>
 <br>
 """ % (source, tr)
