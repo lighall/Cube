@@ -1,0 +1,2397 @@
+
+<html>
+	<head>
+		<base href="/"/>
+		<title>OLL - Speed Cube Database</title>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="Free online speedcubing algorithms database, covers every algorithm for 2x2 - 6x6 including F2L, OLL, PLL, COLL, ZBLL, WV and much more" />
+<meta name="keywords" content="rubiks, speedcube, algdb, cubing, speedcubing, algorithm, alg, 3x3, 4x4, 5x5, 6x6, 2x2, OLL, COLL, PLL, Parity, WV, ZBLL, CLL, EG1" />
+<meta name="author" content="Gil Zussman" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet">
+<script type="text/javascript" src="includes/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="includes/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="includes/jquery-ui-1.12.1/jquery-ui.min.css">
+<link rel="stylesheet" href="speedcubedb.css">
+<link rel="stylesheet" href="includes/fontawesome-free-5.14.0-web/css/all.min.css">
+<link rel="shortcut icon" type="image/jpg" href="/favicon.png" />
+<script type="text/javascript" src="includes/jcookie.js"></script>
+
+<script>
+	$(document).ready(function() {
+		if (getCookie("darkmode") == "true")
+		{
+			$("body").toggleClass("darkmode");
+			
+		}
+		
+		$("#darkmodebutton").click(function(){		
+			$("body, div, table, td, th").css("transition","background-color 2s");
+			if ($("body").hasClass("darkmode"))
+			{
+				setCookie("darkmode","false",500);
+			}
+			else
+			{
+				setCookie("darkmode","true",500);
+			}
+			
+			$("body").toggleClass("darkmode");
+		});
+	});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175803107-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175803107-1');
+</script>		<link rel="stylesheet" href="category.css">
+		<script type="text/javascript" src="category.js?d=1"></script>
+	</head>
+	<body class="preload">
+		<div id="pageheader">
+			<div id="pageheadercontainer">
+			
+				<div class="logocontainer">
+	<a href="/">
+	<img src="logo.png" class="logo" />
+		<div class="logotext">Speed Cube DB</div>
+	</a>
+</div>
+<button id="darkmodebutton"><i class="fa fa-moon" aria-hidden="true"></i></button>				
+				
+				<ul class="breadcrumbs">
+					<li><a href="/"><i class="fas fa-home"></i></a></li>
+					<li><a href="a/3x3">3x3</a></li>
+					<li><a href="a/3x3/OLL">OLL</a></li>
+				</ul>
+				
+				
+<div id="usercontrols">
+	<a href="login.php">
+	
+		<a id="googlelogin" href='https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=56005720278-hgk8iclpv6jogpih0d5slqjtgmoldquo.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Fwww.speedcubedb.com%2Fsso.php&state&scope=email%20profile&approval_prompt=auto'><img src="btn_google_signin_dark_normal_web.png" alt="Sign in via Google" /></a>
+	</a>
+		
+
+<script>
+					
+	$("#googlelogin").on("hover mousehover focus", function(){
+		if (typeof(Storage) !== "undefined") {	
+				window.localStorage.setItem("comeback",location.href);
+		}
+	});
+</script>
+	
+</div>
+<div class="donatebutton"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=YXDSNHGD65YHU&currency_code=USD&source=url">Donate</a></div>
+
+				
+			
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		
+				<div class="categorytable">
+				<div>
+					<h2>OLL</h2>
+					<button id="listview" data-cat="OLL"><i class="fa fa-th-list fa-2" aria-hidden="true"></i></button>
+					<button id="gridview" data-cat="OLL"><i class="fa fa-th fa-2" aria-hidden="true"></i></button>
+					
+					
+					Filter:<select id='filter'><option value="All">All</option><option value='All Corners Oriented'>All Corners Oriented</option><option value='Awkward Shapes'>Awkward Shapes</option><option value='C Shapes'>C Shapes</option><option value='COLL'>COLL</option><option value='Dot Case'>Dot Case</option><option value='Fish Shapes'>Fish Shapes</option><option value='Knight Move Shapes'>Knight Move Shapes</option><option value='L Shapes'>L Shapes</option><option value='Lightning Shape'>Lightning Shape</option><option value='Lightning Shapes'>Lightning Shapes</option><option value='Line Shapes'>Line Shapes</option><option value='P Shapes'>P Shapes</option><option value='Square Shape'>Square Shape</option><option value='T Shapes'>T Shapes</option><option value='W Shapes'>W Shapes</option></select>				</div>
+												<div class="singlealg" data-subgroup="Dot Case" >
+									<div class="algdesc" data-algid="22">
+																				
+																				<a href="a/3x3/OLL/OLL_1">										
+										<img src='jcube.php?n=3&us=llllyllll&bs=lylbbbbbb&fs=lylgggggg&ls=yyyrrrrrr&rs=yyyoooooo&d=0' />										
+										<h3>OLL 1</h3>
+										<h5>Dot Case</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U2 R2 F R F' U2 R' F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U2+R2+F+R+F%27+U2+R%27+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R U' R2 D' r U' r' D R2 U R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U%27+R2+D%27+r+U%27+r%27+D+R2+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M R U R' U R U' R' U r U2' r' U' M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=M+R+U+R%27+U+R+U%27+R%27+U+r+U2%27+r%27+U%27+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U2' R2' F R F' U2' R' F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U2%27+R2%27+F+R+F%27+U2%27+R%27+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_1">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Dot Case" >
+									<div class="algdesc" data-algid="23">
+																				
+																				<a href="a/3x3/OLL/OLL_2">										
+										<img src='jcube.php?n=3&us=llllyllll&bs=yylbbbbbb&fs=lyygggggg&ls=yyyrrrrrr&rs=lyloooooo&d=0' />										
+										<h3>OLL 2</h3>
+										<h5>Dot Case</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y' R U' R2' D' r U r' D R2 U R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+R+U%27+R2%27+D%27+r+U+r%27+D+R2+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y r U r' U2 R U2 R' U2 r U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+r+U+r%27+U2+R+U2+R%27+U2+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F R U R' U' S R U R' U' f' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R+U+R%27+U%27+S+R+U+R%27+U%27+f%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R' U2 r U' r' U2 r U r' U2 R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+U2+r+U%27+r%27+U2+r+U+r%27+U2+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_2">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Dot Case" >
+									<div class="algdesc" data-algid="24">
+																				
+																				<a href="a/3x3/OLL/OLL_3">										
+										<img src='jcube.php?n=3&us=llllylyll&bs=lyyrrrrrr&fs=lyyoooooo&ls=lylgggggg&rs=lyybbbbbb&d=0' />										
+										<h3>OLL 3</h3>
+										<h5>Dot Case</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y R' F2 R2 U2 R' F R U2 R2 F2 R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R%27+F2+R2+U2+R%27+F+R+U2+R2+F2+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M R U R' U r U2 r' U M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=M+R+U+R%27+U+r+U2+r%27+U+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' f R U R' U' f' U' F R U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+f+R+U+R%27+U%27+f%27+U%27+F+R+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 M' U r' U2' r U R' U R2 r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+M%27+U+r%27+U2%27+r+U+R%27+U+R2+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_3">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Dot Case" >
+									<div class="algdesc" data-algid="25">
+																				
+																				<a href="a/3x3/OLL/OLL_4">										
+										<img src='jcube.php?n=3&us=llllyllly&bs=yylrrrrrr&fs=yyloooooo&ls=yylgggggg&rs=lylbbbbbb&d=0' />										
+										<h3>OLL 4</h3>
+										<h5>Dot Case</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y' R' F2 R2 U2 R' F' R U2 R2 F2 R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+R%27+F2+R2+U2+R%27+F%27+R+U2+R2+F2+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y x' R U2' R2' F2 R U' R' F2 R2 U2' R' x 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+x%27+R+U2%27+R2%27+F2+R+U%27+R%27+F2+R2+U2%27+R%27+x"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' f R U R' U' f' U F R U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+f+R+U+R%27+U%27+f%27+U+F+R+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 M' R' U' R U' r' U2 r U' M 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+M%27+R%27+U%27+R+U%27+r%27+U2+r+U%27+M"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_4">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Square Shape" >
+									<div class="algdesc" data-algid="26">
+																				
+																				<a href="a/3x3/OLL/OLL_5">										
+										<img src='jcube.php?n=3&us=llllyylyy&bs=lyybbbbbb&fs=lllgggggg&ls=lyyrrrrrr&rs=llyoooooo&d=0' />										
+										<h3>OLL 5</h3>
+										<h5>Square Shape</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r' U2 R U R' U r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r%27+U2+R+U+R%27+U+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 l' U2 L U L' U l 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+l%27+U2+L+U+L%27+U+l"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R' F2 r U r' F R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R%27+F2+r+U+r%27+F+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F R U R' U' F' U' F R U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R+U+R%27+U%27+F%27+U%27+F+R+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_5">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Square Shape" >
+									<div class="algdesc" data-algid="27">
+																				
+																				<a href="a/3x3/OLL/OLL_6">										
+										<img src='jcube.php?n=3&us=lyylyylll&bs=lllbbbbbb&fs=yylgggggg&ls=yylrrrrrr&rs=ylloooooo&d=0' />										
+										<h3>OLL 6</h3>
+										<h5>Square Shape</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U2 R' U' R U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U2+R%27+U%27+R+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' x' D R2 U' R' U R' D' x 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+x%27+D+R2+U%27+R%27+U+R%27+D%27+x"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 l U2 L' U' L U' l' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+l+U2+L%27+U%27+L+U%27+l%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R U R2 F R F2 U F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R+U+R2+F+R+F2+U+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_6">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Lightning Shape" >
+									<div class="algdesc" data-algid="28">
+																				
+																				<a href="a/3x3/OLL/OLL_7">										
+										<img src='jcube.php?n=3&us=lylyylyll&bs=llybbbbbb&fs=lyygggggg&ls=lllrrrrrr&rs=lyyoooooo&d=0' />										
+										<h3>OLL 7</h3>
+										<h5>Lightning Shape</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U R' U R U2 r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+R%27+U+R+U2+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F R' F' R U2 R U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R%27+F%27+R+U2+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 l U L' U L U2 l' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+l+U+L%27+U+L+U2+l%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														L' U2 L U2 L F' L' F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=L%27+U2+L+U2+L+F%27+L%27+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_7">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Lightning Shape" >
+									<div class="algdesc" data-algid="29">
+																				
+																				<a href="a/3x3/OLL/OLL_8">										
+										<img src='jcube.php?n=3&us=lyllyylly&bs=yllgggggg&fs=yylbbbbbb&ls=yyloooooo&rs=lllrrrrrr&d=0' />										
+										<h3>OLL 8</h3>
+										<h5>Lightning Shape</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														l' U' L U' L' U2 l 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=l%27+U%27+L+U%27+L%27+U2+l"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 r' U' R U' R' U2 r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+r%27+U%27+R+U%27+R%27+U2+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R' F' r U' r' F2 R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+F%27+r+U%27+r%27+F2+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U2 R' U2 R' F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U2+R%27+U2+R%27+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_8">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Fish Shapes" >
+									<div class="algdesc" data-algid="30">
+																				
+																				<a href="a/3x3/OLL/OLL_9">										
+										<img src='jcube.php?n=3&us=llyyyllyl&bs=lyloooooo&fs=yllrrrrrr&ls=yllbbbbbb&rs=yylgggggg&d=0' />										
+										<h3>OLL 9</h3>
+										<h5>Fish Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y R U R' U' R' F R2 U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U+R%27+U%27+R%27+F+R2+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M R U2 R' U' R U' R' U' M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=M+R+U2+R%27+U%27+R+U%27+R%27+U%27+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r' R2 U2 R' U' R U' R' U' M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r%27+R2+U2+R%27+U%27+R+U%27+R%27+U%27+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R' U' R U' R' U R' F R F' U R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R%27+U%27+R+U%27+R%27+U+R%27+F+R+F%27+U+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_9">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Fish Shapes" >
+									<div class="algdesc" data-algid="31">
+																				
+																				<a href="a/3x3/OLL/OLL_10">										
+										<img src='jcube.php?n=3&us=llyyyllyl&bs=lyybbbbbb&fs=llygggggg&ls=llyrrrrrr&rs=lyloooooo&d=0' />										
+										<h3>OLL 10</h3>
+										<h5>Fish Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U R' U R' F R F' R U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+U+R%27+F+R+F%27+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y M' R' U2 R U R' U R U M 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+M%27+R%27+U2+R+U+R%27+U+R+U+M"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 L' U' L U L F' L2 U' L U F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+L%27+U%27+L+U+L+F%27+L2+U%27+L+U+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U R' y' r' U r U' r' U' r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+y%27+r%27+U+r+U%27+r%27+U%27+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_10">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Lightning Shapes" >
+									<div class="algdesc" data-algid="32">
+																				
+																				<a href="a/3x3/OLL/OLL_11">										
+										<img src='jcube.php?n=3&us=llllyyyyl&bs=lyybbbbbb&fs=llygggggg&ls=lylrrrrrr&rs=llyoooooo&d=0' />										
+										<h3>OLL 11</h3>
+										<h5>Lightning Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r' R2 U R' U R U2 R' U M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r%27+R2+U+R%27+U+R+U2+R%27+U+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M R U R' U R U2 R' U M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=M+R+U+R%27+U+R+U2+R%27+U+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														S R U R' U R U2 R' U2 S' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=S+R+U+R%27+U+R+U2+R%27+U2+S%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 S' U2 R U R' U R U2 R' S 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+S%27+U2+R+U+R%27+U+R+U2+R%27+S"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_11">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Lightning Shapes" >
+									<div class="algdesc" data-algid="33">
+																				
+																				<a href="a/3x3/OLL/OLL_12">										
+										<img src='jcube.php?n=3&us=llylyylyl&bs=lylbbbbbb&fs=yllgggggg&ls=yylrrrrrr&rs=ylloooooo&d=0' />										
+										<h3>OLL 12</h3>
+										<h5>Lightning Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y' r R2 U' R U' R' U2 R U' R r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+r+R2+U%27+R+U%27+R%27+U2+R+U%27+R+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' M' R' U' R U' R' U2 R U' M 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+M%27+R%27+U%27+R+U%27+R%27+U2+R+U%27+M"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F R U R' U' F' U F R U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R+U+R%27+U%27+F%27+U+F+R+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' S R' U' R U' R' U2' R U2 S' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+S+R%27+U%27+R+U%27+R%27+U2%27+R+U2+S%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_12">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Knight Move Shapes" >
+									<div class="algdesc" data-algid="34">
+																				
+																				<a href="a/3x3/OLL/OLL_13">										
+										<img src='jcube.php?n=3&us=lllyyyyll&bs=lyybbbbbb&fs=lyygggggg&ls=lllrrrrrr&rs=llyoooooo&d=0' />										
+										<h3>OLL 13</h3>
+										<h5>Knight Move Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														F U R U2 R' U' R U R' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+U+R+U2+R%27+U%27+R+U+R%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U' r' U' r U r' F' U F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U%27+r%27+U%27+r+U+r%27+F%27+U+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F U R U' R2 F' R U R U' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+U+R+U%27+R2+F%27+R+U+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U' r' U' r U r' y L' U L 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U%27+r%27+U%27+r+U+r%27+y+L%27+U+L"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_13">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Knight Move Shapes" >
+									<div class="algdesc" data-algid="35">
+																				
+																				<a href="a/3x3/OLL/OLL_14">										
+										<img src='jcube.php?n=3&us=lllyyylly&bs=yylbbbbbb&fs=yylgggggg&ls=yllrrrrrr&rs=llloooooo&d=0' />										
+										<h3>OLL 14</h3>
+										<h5>Knight Move Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R' F R U R' F' R F U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+F+R+U+R%27+F%27+R+F+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 r' U r U r' U' r y R U' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+r%27+U+r+U+r%27+U%27+r+y+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U R' U' r' F R2 U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+R%27+U%27+r%27+F+R2+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F' U' r' F2 r U' F R U' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F%27+U%27+r%27+F2+r+U%27+F+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_14">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Knight Move Shapes" >
+									<div class="algdesc" data-algid="36">
+																				
+																				<a href="a/3x3/OLL/OLL_15">										
+										<img src='jcube.php?n=3&us=lllyyylly&bs=lyybbbbbb&fs=lylgggggg&ls=llyrrrrrr&rs=llyoooooo&d=0' />										
+										<h3>OLL 15</h3>
+										<h5>Knight Move Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y2 l' U' l L' U' L U l' U l 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+l%27+U%27+l+L%27+U%27+L+U+l%27+U+l"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r' U' r R' U' R U r' U r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r%27+U%27+r+R%27+U%27+R+U+r%27+U+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r' U' M' U' R U r' U r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r%27+U%27+M%27+U%27+R+U+r%27+U+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R' F' R r' F' r U R' F R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R%27+F%27+R+r%27+F%27+r+U+R%27+F+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_15">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Knight Move Shapes" >
+									<div class="algdesc" data-algid="37">
+																				
+																				<a href="a/3x3/OLL/OLL_16">										
+										<img src='jcube.php?n=3&us=llyyyylll&bs=lylbbbbbb&fs=yylgggggg&ls=yllrrrrrr&rs=ylloooooo&d=0' />										
+										<h3>OLL 16</h3>
+										<h5>Knight Move Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U r' R U R' U' r U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+r%27+R+U+R%27+U%27+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U M U R' U' r U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+M+U+R%27+U%27+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R' F R U R' U' F' R U' R' U2 R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R%27+F+R+U+R%27+U%27+F%27+R+U%27+R%27+U2+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 l U l' L U L' U' l U' l' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+l+U+l%27+L+U+L%27+U%27+l+U%27+l%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_16">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Dot Case" >
+									<div class="algdesc" data-algid="38">
+																				
+																				<a href="a/3x3/OLL/OLL_17">										
+										<img src='jcube.php?n=3&us=ylllyllly&bs=yylbbbbbb&fs=lylgggggg&ls=lyyrrrrrr&rs=lyloooooo&d=0' />										
+										<h3>OLL 17</h3>
+										<h5>Dot Case</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U R' U R' F R F' U2 R' F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+U+R%27+F+R+F%27+U2+R%27+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 F R' F' R U S' R U' R' S 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+F+R%27+F%27+R+U+S%27+R+U%27+R%27+S"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' F' r U r' U' S r' F r S' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+F%27+r+U+r%27+U%27+S+r%27+F+r+S%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 F R' F' R M U R U' R' U' M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+F+R%27+F%27+R+M+U+R+U%27+R%27+U%27+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_17">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Dot Case" >
+									<div class="algdesc" data-algid="39">
+																				
+																				<a href="a/3x3/OLL/OLL18">										
+										<img src='jcube.php?n=3&us=ylylyllll&bs=lylbbbbbb&fs=yyygggggg&ls=lylrrrrrr&rs=lyloooooo&d=0' />										
+										<h3>OLL18</h3>
+										<h5>Dot Case</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y R U2 R2 F R F' U2 M' U R U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U2+R2+F+R+F%27+U2+M%27+U+R+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R D r' U' r D' R' U' R2 F R F' R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+D+r%27+U%27+r+D%27+R%27+U%27+R2+F+R+F%27+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' r' U' R U M' U' R2 F R F' U R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+r%27+U%27+R+U+M%27+U%27+R2+F+R+F%27+U+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U R' U R U2 r2 U' R U' R' U2 r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+R%27+U+R+U2+r2+U%27+R+U%27+R%27+U2+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL18">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Dot Case" >
+									<div class="algdesc" data-algid="40">
+																				
+																				<a href="a/3x3/OLL/OLL_19">										
+										<img src='jcube.php?n=3&us=ylylyllll&bs=lylbbbbbb&fs=lylgggggg&ls=lyyrrrrrr&rs=yyloooooo&d=0' />										
+										<h3>OLL 19</h3>
+										<h5>Dot Case</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y S' R U R' S U' R' F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+S%27+R+U+R%27+S+U%27+R%27+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M U R U R' U' M' R' F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=M+U+R+U+R%27+U%27+M%27+R%27+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 r U2 R' U' R U' r2 U2 R U R' U r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+r+U2+R%27+U%27+R+U%27+r2+U2+R+U+R%27+U+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r' R U R U R' U' r R2 F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r%27+R+U+R+U+R%27+U%27+r+R2+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_19">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Dot Case" >
+									<div class="algdesc" data-algid="41">
+																				
+																				<a href="a/3x3/OLL/OLL_20">										
+										<img src='jcube.php?n=3&us=ylylylyly&bs=lylbbbbbb&fs=lylgggggg&ls=lylrrrrrr&rs=lyloooooo&d=0' />										
+										<h3>OLL 20</h3>
+										<h5>Dot Case</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														S' R U R' S U' M' U R U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=S%27+R+U+R%27+S+U%27+M%27+U+R+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U R' U' M2 U R U' R' U' M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+R%27+U%27+M2+U+R+U%27+R%27+U%27+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U R' U' R' F R F' R U2 R2 F R F' R U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+U%27+R%27+F+R+F%27+R+U2+R2+F+R+F%27+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M U R U R' U' M2 U R U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=M+U+R+U+R%27+U%27+M2+U+R+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_20">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="COLL" >
+									<div class="algdesc" data-algid="42">
+																				
+																				<a href="a/3x3/OLL/OLL_21">										
+										<img src='jcube.php?n=3&us=lylyyylyl&bs=llloooooo&fs=lllrrrrrr&ls=ylybbbbbb&rs=ylygggggg&d=0' />										
+										<h3>OLL 21</h3>
+										<h5>COLL</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U R' U R U' R' U R U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+U+R+U%27+R%27+U+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R U2 R' U' R U R' U' R U' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U2+R%27+U%27+R+U+R%27+U%27+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y F R U R' U' R U R' U' R U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+F+R+U+R%27+U%27+R+U+R%27+U%27+R+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R' U2 R U R' U' R U R' U R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R%27+U2+R+U+R%27+U%27+R+U+R%27+U+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_21">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="COLL" >
+									<div class="algdesc" data-algid="43">
+																				
+																				<a href="a/3x3/OLL/OLL_22">										
+										<img src='jcube.php?n=3&us=lylyyylyl&bs=yllbbbbbb&fs=llygggggg&ls=ylyrrrrrr&rs=llloooooo&d=0' />										
+										<h3>OLL 22</h3>
+										<h5>COLL</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U2 R2 U' R2 U' R2 U2 R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U2+R2+U%27+R2+U%27+R2+U2+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R' U2 R2 U R2 U R2 U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+U2+R2+U+R2+U+R2+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' R' U' R U' R' U2 R2 U2 R' U' R U' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+R%27+U%27+R+U%27+R%27+U2+R2+U2+R%27+U%27+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														f R U R' U' S' R U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=f+R+U+R%27+U%27+S%27+R+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_22">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="COLL" >
+									<div class="algdesc" data-algid="44">
+																				
+																				<a href="a/3x3/OLL/OLL_23">										
+										<img src='jcube.php?n=3&us=yyyyyylyl&bs=lllbbbbbb&fs=ylygggggg&ls=lllrrrrrr&rs=llloooooo&d=0' />										
+										<h3>OLL 23</h3>
+										<h5>COLL</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R2 D R' U2 R D' R' U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R2+D+R%27+U2+R+D%27+R%27+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R2 D' R U2 R' D R U2 R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R2+D%27+R+U2+R%27+D+R+U2+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U R' U R U2 R2 U' R U' R' U2 R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+U+R+U2+R2+U%27+R+U%27+R%27+U2+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R U R' U' R U' R' U2 R U' R' U2 R U R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U+R%27+U%27+R+U%27+R%27+U2+R+U%27+R%27+U2+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_23">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="COLL" >
+									<div class="algdesc" data-algid="45">
+																				
+																				<a href="a/3x3/OLL/OLL_24">										
+										<img src='jcube.php?n=3&us=lyyyyylyy&bs=llybbbbbb&fs=yllgggggg&ls=lllrrrrrr&rs=llloooooo&d=0' />										
+										<h3>OLL 24</h3>
+										<h5>COLL</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U R' U' r' F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+R%27+U%27+r%27+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' x' R U R' D R U' R' D' x 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+x%27+R+U+R%27+D+R+U%27+R%27+D%27+x"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 l' U' L U R U' r' F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+l%27+U%27+L+U+R+U%27+r%27+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R U R D R' U' R D' R2 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U+R+D+R%27+U%27+R+D%27+R2"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_24">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="COLL" >
+									<div class="algdesc" data-algid="46">
+																				
+																				<a href="a/3x3/OLL/OLL_25">										
+										<img src='jcube.php?n=3&us=yylyyylyy&bs=llloooooo&fs=yllrrrrrr&ls=lllbbbbbb&rs=llygggggg&d=0' />										
+										<h3>OLL 25</h3>
+										<h5>COLL</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y F' r U R' U' r' F R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+F%27+r+U+R%27+U%27+r%27+F+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F R' F' r U R U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R%27+F%27+r+U+R+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R2 D R' U R D' R' U' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R2+D+R%27+U+R+D%27+R%27+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' x' R U' R' D R U R' D' x 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+x%27+R+U%27+R%27+D+R+U+R%27+D%27+x"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_25">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="COLL" >
+									<div class="algdesc" data-algid="47">
+																				
+																				<a href="a/3x3/OLL/OLL_26">										
+										<img src='jcube.php?n=3&us=yylyyylyl&bs=ylloooooo&fs=yllrrrrrr&ls=lllbbbbbb&rs=yllgggggg&d=0' />										
+										<h3>OLL 26</h3>
+										<h5>COLL</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y R U2 R' U' R U' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U2+R%27+U%27+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R' U' R U' R' U2 R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+U%27+R+U%27+R%27+U2+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 L' U' L U' L' U2 L 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+L%27+U%27+L+U%27+L%27+U2+L"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 L' U R U' L U R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+L%27+U+R+U%27+L+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_26">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="COLL" >
+									<div class="algdesc" data-algid="48">
+																				
+																				<a href="a/3x3/OLL/OLL_27">										
+										<img src='jcube.php?n=3&us=lylyyyyyl&bs=llybbbbbb&fs=llygggggg&ls=lllrrrrrr&rs=llyoooooo&d=0' />										
+										<h3>OLL 27</h3>
+										<h5>COLL</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U R' U R U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+U+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' R' U2 R U R' U R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+R%27+U2+R+U+R%27+U+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 L U L' U L U2 L' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+L+U+L%27+U+L+U2+L%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y L' U2 L U L' U L 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+L%27+U2+L+U+L%27+U+L"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_27">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="All Corners Oriented" >
+									<div class="algdesc" data-algid="49">
+																				
+																				<a href="a/3x3/OLL/OLL_28">										
+										<img src='jcube.php?n=3&us=yyyyylyly&bs=lllbbbbbb&fs=lylgggggg&ls=lllrrrrrr&rs=lyloooooo&d=0' />										
+										<h3>OLL 28</h3>
+										<h5>All Corners Oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U R' U' M U R U' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+R%27+U%27+M+U+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 M' U M U2 M' U M 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+M%27+U+M+U2+M%27+U+M"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R' F R S R' F' R S' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+F+R+S+R%27+F%27+R+S%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														S' R U R' S R U' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=S%27+R+U+R%27+S+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_28">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Awkward Shapes" >
+									<div class="algdesc" data-algid="50">
+																				
+																				<a href="a/3x3/OLL/OLL_29">										
+										<img src='jcube.php?n=3&us=ylyyyllyl&bs=lylbbbbbb&fs=lllgggggg&ls=llyrrrrrr&rs=yyloooooo&d=0' />										
+										<h3>OLL 29</h3>
+										<h5>Awkward Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r2 D' r U r' D r2 U' r' U' r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r2+D%27+r+U+r%27+D+r2+U%27+r%27+U%27+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R U R' U' R U' R' F' U' F R U R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U+R%27+U%27+R+U%27+R%27+F%27+U%27+F+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M U R U R' U' R' F R F' M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=M+U+R+U+R%27+U%27+R%27+F+R+F%27+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y r U R' U' M r' F R F' M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+r+U+R%27+U%27+M+r%27+F+R+F%27+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_29">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Awkward Shapes" >
+									<div class="algdesc" data-algid="51">
+																				
+																				<a href="a/3x3/OLL/OLL_30">										
+										<img src='jcube.php?n=3&us=ylylyylyl&bs=lylgggggg&fs=lllbbbbbb&ls=lyyoooooo&rs=yllrrrrrr&d=0' />										
+										<h3>OLL 30</h3>
+										<h5>Awkward Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y2 F R' F R2 U' R' U' R U R' F2 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+F+R%27+F+R2+U%27+R%27+U%27+R+U+R%27+F2"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' r' D' r U' r' D r2 U' r' U r U r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+r%27+D%27+r+U%27+r%27+D+r2+U%27+r%27+U+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 F U R U2 R' U' R U2 R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+F+U+R+U2+R%27+U%27+R+U2+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' R' F' r U M R U' r' F M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+R%27+F%27+r+U+M+R+U%27+r%27+F+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_30">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="P Shapes" >
+									<div class="algdesc" data-algid="52">
+																				
+																				<a href="a/3x3/OLL/OLL_31">										
+										<img src='jcube.php?n=3&us=lyylyylly&bs=llybbbbbb&fs=yylgggggg&ls=lylrrrrrr&rs=llloooooo&d=0' />										
+										<h3>OLL 31</h3>
+										<h5>P Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R' U' F U R U' R' F' R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+U%27+F+U+R+U%27+R%27+F%27+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y S R U R' U' f' U' F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+S+R+U+R%27+U%27+f%27+U%27+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 S' L' U' L U L F' L' f 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+S%27+L%27+U%27+L+U+L+F%27+L%27+f"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' R' U r' D' r U' r' D r U' R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+R%27+U+r%27+D%27+r+U%27+r%27+D+r+U%27+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_31">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="P Shapes" >
+									<div class="algdesc" data-algid="53">
+																				
+																				<a href="a/3x3/OLL/OLL_32">										
+										<img src='jcube.php?n=3&us=llylyylyy&bs=lyybbbbbb&fs=yllgggggg&ls=lylrrrrrr&rs=llloooooo&d=0' />										
+										<h3>OLL 32</h3>
+										<h5>P Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														S R U R' U' R' F R f' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=S+R+U+R%27+U%27+R%27+F+R+f%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U B' U' R' U R B R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+B%27+U%27+R%27+U+R+B+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 L U F' U' L' U L F L' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+L+U+F%27+U%27+L%27+U+L+F+L%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R U' r D r' U r D' r' U R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U%27+r+D+r%27+U+r+D%27+r%27+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_32">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="T Shapes" >
+									<div class="algdesc" data-algid="54">
+																				
+																				<a href="a/3x3/OLL/OLL_33">										
+										<img src='jcube.php?n=3&us=llyyyylly&bs=lyybbbbbb&fs=yylgggggg&ls=lllrrrrrr&rs=llloooooo&d=0' />										
+										<h3>OLL 33</h3>
+										<h5>T Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U R' U' R' F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+U%27+R%27+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F R U' R' U R U R' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R+U%27+R%27+U+R+U+R%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R' U' R U R f' U' f 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+U%27+R+U+R+f%27+U%27+f"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' r' U' r' D' r U r' D r2 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+r%27+U%27+r%27+D%27+r+U+r%27+D+r2"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_33">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="C Shapes" >
+									<div class="algdesc" data-algid="55">
+																				
+																				<a href="a/3x3/OLL/OLL_34">										
+										<img src='jcube.php?n=3&us=ylyyyylll&bs=lylgggggg&fs=lylbbbbbb&ls=llyoooooo&rs=yllrrrrrr&d=0' />										
+										<h3>OLL 34</h3>
+										<h5>C Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y f R f' U' r' U' R U M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+f+R+f%27+U%27+r%27+U%27+R+U+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R U R2 U' R' F R U R U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R+U+R2+U%27+R%27+F+R+U+R+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R U R' U' B' R' F R F' B 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R+U+R%27+U%27+B%27+R%27+F+R+F%27+B"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F R U R' U' R' F' r U R U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R+U+R%27+U%27+R%27+F%27+r+U+R+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_34">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Fish Shapes" >
+									<div class="algdesc" data-algid="56">
+																				
+																				<a href="a/3x3/OLL/OLL_35">										
+										<img src='jcube.php?n=3&us=ylllyylyy&bs=lylbbbbbb&fs=yllgggggg&ls=lylrrrrrr&rs=llyoooooo&d=0' />										
+										<h3>OLL 35</h3>
+										<h5>Fish Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U2 R2 F R F' R U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U2+R2+F+R+F%27+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' R' U2 R l U' R' U l' U2 R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+R%27+U2+R+l+U%27+R%27+U+l%27+U2+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U2 R' d' R' F R U' R' F' R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U2+R%27+d%27+R%27+F+R+U%27+R%27+F%27+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 F R' F' R2 U' R' U2 R U' R' U2 R U R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+F+R%27+F%27+R2+U%27+R%27+U2+R+U%27+R%27+U2+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_35">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="W Shapes" >
+									<div class="algdesc" data-algid="57">
+																				
+																				<a href="a/3x3/OLL/OLL_36">										
+										<img src='jcube.php?n=3&us=yllyyllyy&bs=lylgggggg&fs=yllbbbbbb&ls=llloooooo&rs=lyyrrrrrr&d=0' />										
+										<h3>OLL 36</h3>
+										<h5>W Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y2 L' U' L U' L' U L U L F' L' F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+L%27+U%27+L+U%27+L%27+U+L+U+L+F%27+L%27+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R U R2 F' U' F U R2 U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U+R2+F%27+U%27+F+U+R2+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R U R' F' R U R' U' R' F R U' R' F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R+U+R%27+F%27+R+U+R%27+U%27+R%27+F+R+U%27+R%27+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R' F' U' F2 U R U' R' F' R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R%27+F%27+U%27+F2+U+R+U%27+R%27+F%27+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_36">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Fish Shapes" >
+									<div class="algdesc" data-algid="58">
+																				
+																				<a href="a/3x3/OLL/OLL_37">										
+										<img src='jcube.php?n=3&us=yylyyllly&bs=lllbbbbbb&fs=yylgggggg&ls=lllrrrrrr&rs=lyyoooooo&d=0' />										
+										<h3>OLL 37</h3>
+										<h5>Fish Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														F R' F' R U R U' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R%27+F%27+R+U+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F R U' R' U' R U R' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R+U%27+R%27+U%27+R+U+R%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y F' r U r' U' r' F r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+F%27+r+U+r%27+U%27+r%27+F+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 r2 D' r U' r' D r U r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+r2+D%27+r+U%27+r%27+D+r+U+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_37">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="W Shapes" >
+									<div class="algdesc" data-algid="59">
+																				
+																				<a href="a/3x3/OLL/OLL_38">										
+										<img src='jcube.php?n=3&us=lyyyylyll&bs=llybbbbbb&fs=lylgggggg&ls=lllrrrrrr&rs=yyloooooo&d=0' />										
+										<h3>OLL 38</h3>
+										<h5>W Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U R' U R U' R' U' R' F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+U+R+U%27+R%27+U%27+R%27+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R' U2 r' D' r U2 r' D R r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+U2+r%27+D%27+r+U2+r%27+D+R+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U R' U' r' F R U R U' R' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+R%27+U%27+r%27+F+R+U+R+U%27+R%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														L' U' L F L' U' L U L F' L' U L F' L' F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=L%27+U%27+L+F+L%27+U%27+L+U+L+F%27+L%27+U+L+F%27+L%27+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_38">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Lightning Shapes" >
+									<div class="algdesc" data-algid="60">
+																				
+																				<a href="a/3x3/OLL/OLL_39">										
+										<img src='jcube.php?n=3&us=yyllyllyy&bs=ylloooooo&fs=lllrrrrrr&ls=lyybbbbbb&rs=lylgggggg&d=0' />										
+										<h3>OLL 39</h3>
+										<h5>Lightning Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y L F' L' U' L U F U' L' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+L+F%27+L%27+U%27+L+U+F+U%27+L%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' f' r U r' U' r' F r S 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+f%27+r+U+r%27+U%27+r%27+F+r+S"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' R U R' F' U' F U R U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+R+U+R%27+F%27+U%27+F+U+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' R B' R' U' R U B U' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+R+B%27+R%27+U%27+R+U+B+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_39">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Lightning Shapes" >
+									<div class="algdesc" data-algid="61">
+																				
+																				<a href="a/3x3/OLL/OLL_40">										
+										<img src='jcube.php?n=3&us=lyylylyyl&bs=llloooooo&fs=llyrrrrrr&ls=yylbbbbbb&rs=lylgggggg&d=0' />										
+										<h3>OLL 40</h3>
+										<h5>Lightning Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y R' F R U R' U' F' U R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R%27+F+R+U+R%27+U%27+F%27+U+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' f R' F' R U R U' R' S' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+f+R%27+F%27+R+U+R+U%27+R%27+S%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' F R U R' U' F' R U R' U R U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+F+R+U+R%27+U%27+F%27+R+U+R%27+U+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R r D r' U r D' r' U' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+r+D+r%27+U+r+D%27+r%27+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_40">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Awkward Shapes" >
+									<div class="algdesc" data-algid="62">
+																				
+																				<a href="a/3x3/OLL/OLL_41">										
+										<img src='jcube.php?n=3&us=ylylyylyl&bs=lylgggggg&fs=ylybbbbbb&ls=lyloooooo&rs=lllrrrrrr&d=0' />										
+										<h3>OLL 41</h3>
+										<h5>Awkward Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y2 R U R' U R U2 R' F R U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R+U+R%27+U+R+U2+R%27+F+R+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 F U R2 D R' U' R D' R2 F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+F+U+R2+D+R%27+U%27+R+D%27+R2+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R' F' U' F R S' R' U R S 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R%27+F%27+U%27+F+R+S%27+R%27+U+R+S"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 M' R' F' U' F U R U' M 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+M%27+R%27+F%27+U%27+F+U+R+U%27+M"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_41">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Awkward Shapes" >
+									<div class="algdesc" data-algid="63">
+																				
+																				<a href="a/3x3/OLL/OLL_42">										
+										<img src='jcube.php?n=3&us=ylyyyllyl&bs=lylbbbbbb&fs=ylygggggg&ls=lllrrrrrr&rs=lyloooooo&d=0' />										
+										<h3>OLL 42</h3>
+										<h5>Awkward Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R' U' R U' R' U2 R F R U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+U%27+R+U%27+R%27+U2+R+F+R+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y F S' R U R' U' F' U S 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+F+S%27+R+U+R%27+U%27+F%27+U+S"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M U F R U R' U' F' M' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=M+U+F+R+U+R%27+U%27+F%27+M%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R' F R F' R' F R F' R U R' U' R U R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R%27+F+R+F%27+R%27+F+R+F%27+R+U+R%27+U%27+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_42">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="P Shapes" >
+									<div class="algdesc" data-algid="64">
+																				
+																				<a href="a/3x3/OLL/OLL_43">										
+										<img src='jcube.php?n=3&us=yllyylyyl&bs=lylbbbbbb&fs=lllgggggg&ls=lllrrrrrr&rs=yyyoooooo&d=0' />										
+										<h3>OLL 43</h3>
+										<h5>P Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y R' U' F' U F R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R%27+U%27+F%27+U+F+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 F' U' L' U L F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+F%27+U%27+L%27+U+L+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														f' L' U' L U f 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=f%27+L%27+U%27+L+U+f"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' r' F' U' F U r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+r%27+F%27+U%27+F+U+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_43">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="P Shapes" >
+									<div class="algdesc" data-algid="65">
+																				
+																				<a href="a/3x3/OLL/OLL_44">										
+										<img src='jcube.php?n=3&us=llylyylyy&bs=lylbbbbbb&fs=lllgggggg&ls=yyyrrrrrr&rs=llloooooo&d=0' />										
+										<h3>OLL 44</h3>
+										<h5>P Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														f R U R' U' f' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=f+R+U+R%27+U%27+f%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 F U R U' R' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+F+U+R+U%27+R%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R U B U' B' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U+B+U%27+B%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' F R U' R' F' L' U L 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+F+R+U%27+R%27+F%27+L%27+U+L"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_44">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="T Shapes" >
+									<div class="algdesc" data-algid="66">
+																				
+																				<a href="a/3x3/OLL/OLL_45">										
+										<img src='jcube.php?n=3&us=llyyyylly&bs=lylbbbbbb&fs=lylgggggg&ls=ylyrrrrrr&rs=llloooooo&d=0' />										
+										<h3>OLL 45</h3>
+										<h5>T Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														F R U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R' F' U' F U R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R%27+F%27+U%27+F+U+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 F' L' U' L U F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+F%27+L%27+U%27+L+U+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 f U R U' R' f' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+f+U+R+U%27+R%27+f%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_45">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="C Shapes" >
+									<div class="algdesc" data-algid="67">
+																				
+																				<a href="a/3x3/OLL/OLL_46">										
+										<img src='jcube.php?n=3&us=yyllylyyl&bs=lllbbbbbb&fs=lllgggggg&ls=lylrrrrrr&rs=yyyoooooo&d=0' />										
+										<h3>OLL 46</h3>
+										<h5>C Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R' U' R' F R F' U R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+U%27+R%27+F+R+F%27+U+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y F R U R' F' d R U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+F+R+U+R%27+F%27+d+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R2 D r' U' r D' R2' F' U F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R2+D+r%27+U%27+r+D%27+R2%27+F%27+U+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 r' F' L' U L U' F r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+r%27+F%27+L%27+U+L+U%27+F+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_46">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="L Shapes" >
+									<div class="algdesc" data-algid="68">
+																				
+																				<a href="a/3x3/OLL/OLL_47">										
+										<img src='jcube.php?n=3&us=lyllyylll&bs=llybbbbbb&fs=yylgggggg&ls=lylrrrrrr&rs=ylyoooooo&d=0' />										
+										<h3>OLL 47</h3>
+										<h5>L Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														F' L' U' L U L' U' L U F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F%27+L%27+U%27+L+U+L%27+U%27+L+U+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R' U' R' F R F' R' F R F' U R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+U%27+R%27+F+R+F%27+R%27+F+R+F%27+U+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' F R' F' R U2 R U' R' U R U2 R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+F+R%27+F%27+R+U2+R+U%27+R%27+U+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' F U R U' R' F' R U R' U R U2' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+F+U+R+U%27+R%27+F%27+R+U+R%27+U+R+U2%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_47">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="L Shapes" >
+									<div class="algdesc" data-algid="69">
+																				
+																				<a href="a/3x3/OLL/OLL_48">										
+										<img src='jcube.php?n=3&us=lylyyllll&bs=yllbbbbbb&fs=lyygggggg&ls=ylyrrrrrr&rs=lyloooooo&d=0' />										
+										<h3>OLL 48</h3>
+										<h5>L Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														F R U R' U' R U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R+U+R%27+U%27+R+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R U R' U R U2 R' U' F R U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R+U+R%27+U+R+U2+R%27+U%27+F+R+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F R' F' U2' R U R' U R2 U2' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R%27+F%27+U2%27+R+U+R%27+U+R2+U2%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U2 R' U' R U R' U2 R' F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U2+R%27+U%27+R+U+R%27+U2+R%27+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_48">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="L Shapes" >
+									<div class="algdesc" data-algid="70">
+																				
+																				<a href="a/3x3/OLL/OLL_49">										
+										<img src='jcube.php?n=3&us=lllyyllyl&bs=lyygggggg&fs=yllbbbbbb&ls=llloooooo&rs=yyyrrrrrr&d=0' />										
+										<h3>OLL 49</h3>
+										<h5>L Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y2 r U' r2 U r2 U r2 U' r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+r+U%27+r2+U+r2+U+r2+U%27+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														l U' l2 U l2 U l2 U' l 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=l+U%27+l2+U+l2+U+l2+U%27+l"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R' F R' F' R2 U2 B' R B R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R%27+F+R%27+F%27+R2+U2+B%27+R+B+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R B' R2 F R2 B R2 F' R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+B%27+R2+F+R2+B+R2+F%27+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_49">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="L Shapes" >
+									<div class="algdesc" data-algid="71">
+																				
+																				<a href="a/3x3/OLL/OLL_50">										
+										<img src='jcube.php?n=3&us=llllyylyl&bs=yylbbbbbb&fs=llygggggg&ls=yyyrrrrrr&rs=llloooooo&d=0' />										
+										<h3>OLL 50</h3>
+										<h5>L Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r' U r2 U' r2 U' r2 U r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r%27+U+r2+U%27+r2+U%27+r2+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R' F R2 B' R2 F' R2 B R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R%27+F+R2+B%27+R2+F%27+R2+B+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 l' U l2 U' l2 U' l2 U l' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+l%27+U+l2+U%27+l2+U%27+l2+U+l%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' R U2 R' U' R U' R' F R U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+R+U2+R%27+U%27+R+U%27+R%27+F+R+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_50">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Line Shapes" >
+									<div class="algdesc" data-algid="72">
+																				
+																				<a href="a/3x3/OLL/OLL_51">										
+										<img src='jcube.php?n=3&us=lllyyylll&bs=yylbbbbbb&fs=lyygggggg&ls=ylyrrrrrr&rs=llloooooo&d=0' />										
+										<h3>OLL 51</h3>
+										<h5>Line Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y2 F U R U' R' U R U' R' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+F+U+R+U%27+R%27+U+R+U%27+R%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														f R U R' U' R U R' U' f' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=f+R+U+R%27+U%27+R+U+R%27+U%27+f%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' R' U' R' F R F' R U' R' U2 R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+R%27+U%27+R%27+F+R+F%27+R+U%27+R%27+U2+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U2' R' U2 R' F R2 U R' U' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U2%27+R%27+U2+R%27+F+R2+U+R%27+U%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_51">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Line Shapes" >
+									<div class="algdesc" data-algid="73">
+																				
+																				<a href="a/3x3/OLL/OLL_52">										
+										<img src='jcube.php?n=3&us=lyllyllyl&bs=llyoooooo&fs=yllrrrrrr&ls=lylbbbbbb&rs=yyygggggg&d=0' />										
+										<h3>OLL 52</h3>
+										<h5>Line Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U R' U R U' B U' B' R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+U+R+U%27+B+U%27+B%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 R' F' U' F U' R U R' U R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+R%27+F%27+U%27+F+U%27+R+U+R%27+U+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R' U' R U' R' U F' U F R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R%27+U%27+R+U%27+R%27+U+F%27+U+F+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U R' U R U' y R U' R' F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+U+R+U%27+y+R+U%27+R%27+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_52">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="L Shapes" >
+									<div class="algdesc" data-algid="74">
+																				
+																				<a href="a/3x3/OLL/OLL_53">										
+										<img src='jcube.php?n=3&us=llllyylyl&bs=lylbbbbbb&fs=lllgggggg&ls=yyyrrrrrr&rs=ylyoooooo&d=0' />										
+										<h3>OLL 53</h3>
+										<h5>L Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y r' U2 R U R' U' R U R' U r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+r%27+U2+R+U+R%27+U%27+R+U+R%27+U+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 l' U' L U' L' U L U' L' U2 l 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+l%27+U%27+L+U%27+L%27+U+L+U%27+L%27+U2+l"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r' U' R U' R' U R U' R' U2 r 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r%27+U%27+R+U%27+R%27+U+R+U%27+R%27+U2+r"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' l' U2 L U L' U' L U L' U l 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+l%27+U2+L+U+L%27+U%27+L+U+L%27+U+l"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_53">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="L Shapes" >
+									<div class="algdesc" data-algid="75">
+																				
+																				<a href="a/3x3/OLL/OLL_54">										
+										<img src='jcube.php?n=3&us=lyllyylll&bs=lllbbbbbb&fs=lylgggggg&ls=yyyrrrrrr&rs=ylyoooooo&d=0' />										
+										<h3>OLL 54</h3>
+										<h5>L Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U R' U R U' R' U R U2 r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+R%27+U+R+U%27+R%27+U+R+U2+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y' r U2 R' U' R U R' U' R U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y%27+r+U2+R%27+U%27+R+U+R%27+U%27+R+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y2 l U L' U L U' L' U L U2 l' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y2+l+U+L%27+U+L+U%27+L%27+U+L+U2+l%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F' L' U' L U L' U L U' L' U' L F 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F%27+L%27+U%27+L+U+L%27+U+L+U%27+L%27+U%27+L+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_54">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Line Shapes" >
+									<div class="algdesc" data-algid="76">
+																				
+																				<a href="a/3x3/OLL/OLL_55">										
+										<img src='jcube.php?n=3&us=lyllyllyl&bs=lllbbbbbb&fs=lllgggggg&ls=yyyrrrrrr&rs=yyyoooooo&d=0' />										
+										<h3>OLL 55</h3>
+										<h5>Line Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														y R' F U R U' R2 F' R2 U R' U' R 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R%27+F+U+R+U%27+R2+F%27+R2+U+R%27+U%27+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y F U' R2 D R' U2 R D' R2 U F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+F+U%27+R2+D+R%27+U2+R+D%27+R2+U+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R' F R U R U' R2 F' R2 U' R' U R U R' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R%27+F+R+U+R+U%27+R2+F%27+R2+U%27+R%27+U+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U2 R2 U' R U' R' U2 F R F' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U2+R2+U%27+R+U%27+R%27+U2+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_55">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Line Shapes" >
+									<div class="algdesc" data-algid="77">
+																				
+																				<a href="a/3x3/OLL/OLL_56">										
+										<img src='jcube.php?n=3&us=lllyyylll&bs=lylbbbbbb&fs=lylgggggg&ls=ylyrrrrrr&rs=ylyoooooo&d=0' />										
+										<h3>OLL 56</h3>
+										<h5>Line Shapes</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U r' U R U' R' U R U' R' r U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+r%27+U+R+U%27+R%27+U+R+U%27+R%27+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U r' U R U' R' M' U R U2 r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+r%27+U+R+U%27+R%27+M%27+U+R+U2+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														F R U R' U' R F' r U R' U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=F+R+U+R%27+U%27+R+F%27+r+U+R%27+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U r' U R U' R' U R U' M' U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=r+U+r%27+U+R+U%27+R%27+U+R+U%27+M%27+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_56">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="All Corners Oriented" >
+									<div class="algdesc" data-algid="78">
+																				
+																				<a href="a/3x3/OLL/OLL_57">										
+										<img src='jcube.php?n=3&us=ylyyyyyly&bs=lylbbbbbb&fs=lylgggggg&ls=lllrrrrrr&rs=llloooooo&d=0' />										
+										<h3>OLL 57</h3>
+										<h5>All Corners Oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U R' U' M' U R U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+U%27+M%27+U+R+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R U R' S' R U' R' S 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U+R%27+S%27+R+U%27+R%27+S"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U R' U' r R' U R U' r' 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=R+U+R%27+U%27+r+R%27+U+R+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														y R U' R' S' R U R' S 
+														<a href="http://alg.cubing.net/?stage=OLL&type=alg&puzzle=3x3x3&alg=y+R+U%27+R%27+S%27+R+U+R%27+S"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/OLL/OLL_57">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+										
+		</div>
+		<div class="footer">
+<p>Created by Gil Zussman</p>
+<p>Please send any bug reports and feedback to <a href="mailto:gil@speedcubedb.com">gil@speedcubedb.com</a></p>
+<p><a href="privacypolicy.php">Privacy Policy</a></p>
+</div>		
+	</body>
+</html>

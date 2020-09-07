@@ -2,34 +2,37 @@ from lxml import etree
 import re
 import requests
 import urllib.parse
+import os
 
 
 # config
 getimg = False
+getdetail = False
 # show，showfull，print
 htmltype = 'show'
+source = 'SBLS'
 
-with open('cmll原始.htm', 'r') as f:
+with open(os.path.abspath('.') + '/Spider/公式整合/%s.html' % source, 'r') as f:
     str_html = f.read()
 tree = etree.HTML(str_html)
 c = 0
 tr = ''
 td = ''
 e = tree.xpath('//div[@class="singlealg"]')
-for j in range(42):
-    imgc = (int(j % 7))*6 + int(j/7)
-    cm = 7
-    # 全公式版本采用横排其他版本竖排
-    if htmltype == 'showfull':
-        imgc = j
-        cm = 6
+for j in range(len(e)):
+    imgc = j
+    cm = 6
+    # 仅cmll考虑打印排版
+    if htmltype != 'showfull' and source == 'CMLL':
+        imgc = (int(j % 7))*6 + int(j/7)
+        cm = 7
     i = e[imgc]
     img = i.xpath('.//img/@src')[0]
     title = i.xpath('.//h3//text()')[0]
     alg = []
     emalg = i.xpath('.//li//text()')[:1]
     if htmltype == 'showfull':
-        if title.startswith('L'):
+        if title.startswith('L') or not getdetail:
             emalg = i.xpath('.//li//text()')
         else:
             while True:
@@ -52,7 +55,7 @@ for j in range(42):
     else:
         stralg = []
         for a in alg:
-            urla = 'alg/index.html?alg=%s&title=%s&stage=CMLL&type=alg&scheme=yellowtop'
+            urla = 'alg/index.html?alg=%s&title=%s&stage=%s&type=alg&scheme=yellowtop'
 
             title_u = urllib.parse.quote(title)
             alg_u = a.replace(' ', '_').replace("'", '-')
@@ -64,7 +67,7 @@ for j in range(42):
             #         setup.append(s+"'")
             # setup = ' '.join(setup).replace(' ', '_').replace("'", '-')
             stralg.append('<a href ="%s" target="_blank">%s</a>' % (
-                urla % (alg_u, title_u), a))
+                urla % (alg_u, title_u, source), a))
         alg = '<br>'.join(stralg)
     # 打印版本做是当缩减保证a4可以打印下
     if htmltype == 'print':
@@ -74,19 +77,19 @@ for j in range(42):
                           "F RU'R'U' RUR'F' RUR'U' R'FRF'")
     # 大多情况不需要重新获取图片
     if getimg:
-        r = requests.get(img)
-        with open('img/cmll/%s.png' % imgc, 'wb') as f:
+        r = requests.get('http://www.speedcubedb.com/' + img)
+        with open(os.path.abspath('.') + '/img/%s/%s.png' % (source, imgc), 'wb') as f:
             f.write(r.content)
         print('%s image' % j)
     td += """
     <td valign = 'top'>
-        <img src = 'img/cmll/%s.png' >
+        <img src = 'img/%s/%s.png' >
         <br>
         <b>%s</b>
         <br>
         %s
     </td>
-    """ % (imgc, title, alg)
+    """ % (source, imgc, title, alg)
     c += 1
 
     if(c == cm):
@@ -98,7 +101,7 @@ for j in range(42):
         """ % td
         td = ''
 html = """
-<title>CMLL</title>
+<title>%s</title>
 <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 <style type="text/css">
     td {
@@ -114,7 +117,7 @@ html = """
 <table>
 %s
 </table>
-""" % tr
+""" % (source, tr)
 if htmltype == 'print':
     html = """
     <style type="text/css">
@@ -138,10 +141,10 @@ if htmltype == 'print':
     """ % (tr, tr)
 
 if htmltype == 'print':
-    fn = 'CMLLPrint.html'
+    fn = '%sPrint.html' % source
 if htmltype == 'show':
-    fn = 'CMLL.html'
+    fn = '%s.html' % source
 if htmltype == 'showfull':
-    fn = 'CMLLFull.html'
+    fn = '%sFull.html' % source
 with open(fn, 'w') as f:
     f.write(html)

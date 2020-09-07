@@ -1,0 +1,2057 @@
+
+<html>
+	<head>
+		<base href="/"/>
+		<title>SBLS - Speed Cube Database</title>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="Free online speedcubing algorithms database, covers every algorithm for 2x2 - 6x6 including F2L, OLL, PLL, COLL, ZBLL, WV and much more" />
+<meta name="keywords" content="rubiks, speedcube, algdb, cubing, speedcubing, algorithm, alg, 3x3, 4x4, 5x5, 6x6, 2x2, OLL, COLL, PLL, Parity, WV, ZBLL, CLL, EG1" />
+<meta name="author" content="Gil Zussman" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet">
+<script type="text/javascript" src="includes/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="includes/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="includes/jquery-ui-1.12.1/jquery-ui.min.css">
+<link rel="stylesheet" href="speedcubedb.css">
+<link rel="stylesheet" href="includes/fontawesome-free-5.14.0-web/css/all.min.css">
+<link rel="shortcut icon" type="image/jpg" href="/favicon.png" />
+<script type="text/javascript" src="includes/jcookie.js"></script>
+
+<script>
+	$(document).ready(function() {
+		if (getCookie("darkmode") == "true")
+		{
+			$("body").toggleClass("darkmode");
+			
+		}
+		
+		$("#darkmodebutton").click(function(){		
+			$("body, div, table, td, th").css("transition","background-color 2s");
+			if ($("body").hasClass("darkmode"))
+			{
+				setCookie("darkmode","false",500);
+			}
+			else
+			{
+				setCookie("darkmode","true",500);
+			}
+			
+			$("body").toggleClass("darkmode");
+		});
+	});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175803107-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175803107-1');
+</script>		<link rel="stylesheet" href="category.css">
+		<script type="text/javascript" src="category.js?d=1"></script>
+	</head>
+	<body class="preload">
+		<div id="pageheader">
+			<div id="pageheadercontainer">
+			
+				<div class="logocontainer">
+	<a href="/">
+	<img src="logo.png" class="logo" />
+		<div class="logotext">Speed Cube DB</div>
+	</a>
+</div>
+<button id="darkmodebutton"><i class="fa fa-moon" aria-hidden="true"></i></button>				
+				
+				<ul class="breadcrumbs">
+					<li><a href="/"><i class="fas fa-home"></i></a></li>
+					<li><a href="a/3x3">3x3</a></li>
+					<li><a href="a/3x3/SBLS">Second Block Last Slot</a></li>
+				</ul>
+				
+				
+<div id="usercontrols">
+	<a href="login.php">
+	
+		<a id="googlelogin" href='https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=56005720278-hgk8iclpv6jogpih0d5slqjtgmoldquo.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Fwww.speedcubedb.com%2Fsso.php&state&scope=email%20profile&approval_prompt=auto'><img src="btn_google_signin_dark_normal_web.png" alt="Sign in via Google" /></a>
+	</a>
+		
+
+<script>
+					
+	$("#googlelogin").on("hover mousehover focus", function(){
+		if (typeof(Storage) !== "undefined") {	
+				window.localStorage.setItem("comeback",location.href);
+		}
+	});
+</script>
+	
+</div>
+<div class="donatebutton"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=YXDSNHGD65YHU&currency_code=USD&source=url">Donate</a></div>
+
+				
+			
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		
+				<div class="categorytable">
+				<div>
+					<h2>Second Block Last Slot</h2>
+					<button id="listview" data-cat="SBLS"><i class="fa fa-th-list fa-2" aria-hidden="true"></i></button>
+					<button id="gridview" data-cat="SBLS"><i class="fa fa-th fa-2" aria-hidden="true"></i></button>
+					
+					
+					Filter:<select id='filter'><option value="All">All</option><option value='Corner on D facing forward'>Corner on D facing forward</option><option value='Corner on D facing side'>Corner on D facing side</option><option value='Corner on D solved'>Corner on D solved</option><option value='Corner on U facing up'>Corner on U facing up</option><option value='Corner on U misoriented'>Corner on U misoriented</option><option value='Corner on U oriented'>Corner on U oriented</option></select>				</div>
+												<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="914">
+																				
+																				<a href="a/3x3/SBLS/U_UB">										
+																						<img src="icube.php?n=3&fl=lgllllllwllogllgllglllooloollogllgllglllooloo&d=0" />
+																					
+										<h3>U UB</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U R U2 R' U R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+R+U2+R%27+U+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U R U2 R2 F R F' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+R+U2+R2+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_UB">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="915">
+																				
+																				<a href="a/3x3/SBLS/U_UR">										
+																						<img src="icube.php?n=3&fl=lllllgllwllogllgllgollooloollogllgllgollooloo&d=0" />
+																					
+										<h3>U UR</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U2 R' U' R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U2+R%27+U%27+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_UR">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="916">
+																				
+																				<a href="a/3x3/SBLS/U_UF">										
+																						<img src="icube.php?n=3&fl=lllllllgwloogllgllgllloolooloogllgllglllooloo&d=0" />
+																					
+										<h3>U UF</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														M' r U' r' U2 r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M%27+r+U%27+r%27+U2+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U2 R2 U2 R' U' R U' R2' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+R2+U2+R%27+U%27+R+U%27+R2%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U2 r' U' M' r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U2+r%27+U%27+M%27+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U R U' R' U' R U' R' U R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+R+U%27+R%27+U%27+R+U%27+R%27+U+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_UF">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="917">
+																				
+																				<a href="a/3x3/SBLS/U_UL">										
+																						<img src="icube.php?n=3&fl=lllgllllwllogllgllglllooloollogllgllglllooloo&d=0" />
+																					
+										<h3>U UL</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U' R' U2 R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+R%27+U2+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U2 R U R' U R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+R+U+R%27+U+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U2 R U R2 F R F' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+R+U+R2+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_UL">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="918">
+																				
+																				<a href="a/3x3/SBLS/U_FR">										
+																						<img src="icube.php?n=3&fl=llllllllwlloglggllglloooloolloglggllglloooloo&d=0" />
+																					
+										<h3>U FR</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U2 r U r' U r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+r+U+r%27+U+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U R' U' R U R' U' R U R' U' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U+R%27+U%27+R+U+R%27+U%27+R+U+R%27+U%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U' r2 U' r2' U' r2 U r2' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+r2+U%27+r2%27+U%27+r2+U+r2%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R2 U R2' U R2 U2 R2' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R2+U+R2%27+U+R2+U2+R2%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_FR">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="919">
+																				
+																				<a href="a/3x3/SBLS/U_DB">										
+																						<img src="icube.php?n=3&fl=llllllllwllogllgllglllooloollogllgllglllooloo&d=0" />
+																					
+										<h3>U DB</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U' r' U2 r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+r%27+U2+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_DB">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="920">
+																				
+																				<a href="a/3x3/SBLS/U_DF">										
+																						<img src="icube.php?n=3&fl=llllllllwllogllgolglllooloollogllgolglllooloo&d=0" />
+																					
+										<h3>U DF</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U M' U R' U' r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U+M%27+U+R%27+U%27+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U2 r U r' F' U' F 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+r+U+r%27+F%27+U%27+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U' R' U2 M' r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+R%27+U2+M%27+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_DF">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="921">
+																				
+																				<a href="a/3x3/SBLS/U_UB-">										
+																						<img src="icube.php?n=3&fl=lollllllwllogllgllglllooloollogllgllglllooloo&d=0" />
+																					
+										<h3>U UB-</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U2 F' U' F r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+F%27+U%27+F+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U' r' U2 r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U%27+r%27+U2+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_UB-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="922">
+																				
+																				<a href="a/3x3/SBLS/U_UR-">										
+																						<img src="icube.php?n=3&fl=lllllollwllogllgllggllooloollogllgllggllooloo&d=0" />
+																					
+										<h3>U UR-</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U r U2 r' U r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+r+U2+r%27+U+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_UR-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="923">
+																				
+																				<a href="a/3x3/SBLS/U_UF-">										
+																						<img src="icube.php?n=3&fl=lllllllowlgogllgllglllooloolgogllgllglllooloo&d=0" />
+																					
+										<h3>U UF-</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U2 M' r U R' U r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+M%27+r+U+R%27+U+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M' U R U2 R2 F R F' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M%27+U+R+U2+R2+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M' U R U2 R' U R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M%27+U+R+U2+R%27+U+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_UF-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="924">
+																				
+																				<a href="a/3x3/SBLS/U_UL-">										
+																						<img src="icube.php?n=3&fl=lllollllwllogllgllglllooloollogllgllglllooloo&d=0" />
+																					
+										<h3>U UL-</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' F' U2' F r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+F%27+U2%27+F+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U' r' U2 M' r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U%27+r%27+U2+M%27+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_UL-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="925">
+																				
+																				<a href="a/3x3/SBLS/U_FR-">										
+																						<img src="icube.php?n=3&fl=llllllllwlloglogllgllgooloolloglogllgllgooloo&d=0" />
+																					
+										<h3>U FR-</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' R' F R F' R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+R%27+F+R+F%27+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U2 R' U' r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U2+R%27+U%27+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U' R' U2 r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+R%27+U2+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_FR-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="926">
+																				
+																				<a href="a/3x3/SBLS/U_DB-">										
+																						<img src="icube.php?n=3&fl=llllllllwllogllgllglllooloollogllgllglllooloo&d=0" />
+																					
+										<h3>U DB-</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U2 M' r U r' F' U' F 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+M%27+r+U+r%27+F%27+U%27+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M U R U2 R' U R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M+U+R+U2+R%27+U+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U' R' U2 M R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+R%27+U2+M+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M U R U2 R2 F R F' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M+U+R+U2+R2+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_DB-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U facing up" >
+									<div class="algdesc" data-algid="927">
+																				
+																				<a href="a/3x3/SBLS/U_DF-">										
+																						<img src="icube.php?n=3&fl=llllllllwllogllgglglllooloollogllgglglllooloo&d=0" />
+																					
+										<h3>U DF-</h3>
+										<h5>Corner on U facing up</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U2 R U R' U r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+R+U+R%27+U+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M R U' r' U2 r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M+R+U%27+r%27+U2+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r M2 U' r' U2 r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+M2+U%27+r%27+U2+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U_DF-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="928">
+																				
+																				<a href="a/3x3/SBLS/U%2B_UB">										
+																						<img src="icube.php?n=3&fl=lgllllllollggllgllwlllooloollggllgllwlllooloo&d=0" />
+																					
+										<h3>U+ UB</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_UB">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="929">
+																				
+																				<a href="a/3x3/SBLS/U%2B_UR">										
+																						<img src="icube.php?n=3&fl=lllllgllollggllgllwollooloollggllgllwollooloo&d=0" />
+																					
+										<h3>U+ UR</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' M' U M R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+M%27+U+M+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U' R U' R' U R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+R+U%27+R%27+U+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_UR">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="930">
+																				
+																				<a href="a/3x3/SBLS/U%2B_UF">										
+																						<img src="icube.php?n=3&fl=lllgllllollggllgllwlllooloollggllgllwlllooloo&d=0" />
+																					
+										<h3>U+ UF</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U2 R U' R' U' R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+R+U%27+R%27+U%27+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U' r' U' r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U%27+r%27+U%27+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U' R U R' U R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+R+U+R%27+U+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U M' U' M R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+M%27+U%27+M+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_UF">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="931">
+																				
+																				<a href="a/3x3/SBLS/U%2B_UL">										
+																						<img src="icube.php?n=3&fl=lllllllgologgllgllwlllooloologgllgllwlllooloo&d=0" />
+																					
+										<h3>U+ UL</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r M2 U2 M' U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+M2+U2+M%27+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M U2 M' U2 R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M+U2+M%27+U2+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_UL">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="932">
+																				
+																				<a href="a/3x3/SBLS/U%2B_FR">										
+																						<img src="icube.php?n=3&fl=llllllllollgglggllwlloooloollgglggllwlloooloo&d=0" />
+																					
+										<h3>U+ FR</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' R' D' R U R' D R 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+R%27+D%27+R+U+R%27+D+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U R' D' R U' R' D R 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+R%27+D%27+R+U%27+R%27+D+R"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U' R U2 R' U R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+R+U2+R%27+U+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_FR">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="933">
+																				
+																				<a href="a/3x3/SBLS/U%2B_DB">										
+																						<img src="icube.php?n=3&fl=llllllllollggllgolwlllooloollggllgolwlllooloo&d=0" />
+																					
+										<h3>U+ DB</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														M' r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M%27+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_DB">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="934">
+																				
+																				<a href="a/3x3/SBLS/U%2B_DF">										
+																						<img src="icube.php?n=3&fl=llllllllollggllgllwlllooloollggllgllwlllooloo&d=0" />
+																					
+										<h3>U+ DF</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U2 M' U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U2+M%27+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_DF">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="935">
+																				
+																				<a href="a/3x3/SBLS/U%2B_UB-">										
+																						<img src="icube.php?n=3&fl=lollllllollggllgllwlllooloollggllgllwlllooloo&d=0" />
+																					
+										<h3>U+ UB-</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														M' U2 M U2 r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M%27+U2+M+U2+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U2 M2 U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U2+M2+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_UB-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="936">
+																				
+																				<a href="a/3x3/SBLS/U%2B_UR-">										
+																						<img src="icube.php?n=3&fl=lllllollollggllgllwgllooloollggllgllwgllooloo&d=0" />
+																					
+										<h3>U+ UR-</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U' R' U' M R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+R%27+U%27+M+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U M U' M' r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+M+U%27+M%27+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_UR-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="937">
+																				
+																				<a href="a/3x3/SBLS/U%2B_UF-">										
+																						<img src="icube.php?n=3&fl=llllllloolgggllgllwlllooloolgggllgllwlllooloo&d=0" />
+																					
+										<h3>U+ UF-</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_UF-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="938">
+																				
+																				<a href="a/3x3/SBLS/U%2B_UL-">										
+																						<img src="icube.php?n=3&fl=lllollllollggllgllwlllooloollggllgllwlllooloo&d=0" />
+																					
+										<h3>U+ UL-</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' M U M' r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+M+U+M%27+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U' r U' r' U R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+r+U%27+r%27+U+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_UL-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="939">
+																				
+																				<a href="a/3x3/SBLS/U%2B_FR-">										
+																						<img src="icube.php?n=3&fl=llllllllollgglogllwllgooloollgglogllwllgooloo&d=0" />
+																					
+										<h3>U+ FR-</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U F' U' F U' R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+F%27+U%27+F+U%27+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U M U' M2 U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U+M+U%27+M2+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														r U' r' M U' r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U%27+r%27+M+U%27+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_FR-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="940">
+																				
+																				<a href="a/3x3/SBLS/U%2B_DB-">										
+																						<img src="icube.php?n=3&fl=llllllllollggllgllwlllooloollggllgllwlllooloo&d=0" />
+																					
+										<h3>U+ DB-</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														M R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_DB-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U oriented" >
+									<div class="algdesc" data-algid="941">
+																				
+																				<a href="a/3x3/SBLS/U%2B_DF-">										
+																						<img src="icube.php?n=3&fl=llllllllollggllgglwlllooloollggllgglwlllooloo&d=0" />
+																					
+										<h3>U+ DF-</h3>
+										<h5>Corner on U oriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' r U r' U R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+r+U+r%27+U+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U%2B_DF-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="942">
+																				
+																				<a href="a/3x3/SBLS/U-_UB">										
+																						<img src="icube.php?n=3&fl=lgllllllgllwgllgllolllooloollwgllgllolllooloo&d=0" />
+																					
+										<h3>U- UB</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' R U R' U' R U2 R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+R+U+R%27+U%27+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M' U' M U' R U2 R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M%27+U%27+M+U%27+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U2 M U' r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+M+U%27+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_UB">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="943">
+																				
+																				<a href="a/3x3/SBLS/U-_UR">										
+																						<img src="icube.php?n=3&fl=lllllgllgllwgllglloollooloollwgllglloollooloo&d=0" />
+																					
+										<h3>U- UR</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U2 R U2 R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R' F R F' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R%27+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_UR">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="944">
+																				
+																				<a href="a/3x3/SBLS/U-_UF">										
+																						<img src="icube.php?n=3&fl=lllllllgglowgllgllolllooloolowgllgllolllooloo&d=0" />
+																					
+										<h3>U- UF</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														M U r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M+U+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_UF">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="945">
+																				
+																				<a href="a/3x3/SBLS/U-_UL">										
+																						<img src="icube.php?n=3&fl=lllgllllgllwgllgllolllooloollwgllgllolllooloo&d=0" />
+																					
+										<h3>U- UL</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' R U2 R' U' R U2 R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+R+U2+R%27+U%27+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U' M U2 r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+M+U2+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_UL">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="946">
+																				
+																				<a href="a/3x3/SBLS/U-_FR">										
+																						<img src="icube.php?n=3&fl=llllllllgllwglggllolloooloollwglggllolloooloo&d=0" />
+																					
+										<h3>U- FR</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U r U r' U' r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+r+U+r%27+U%27+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U' R U' R' U' R U2 R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+R+U%27+R%27+U%27+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_FR">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="947">
+																				
+																				<a href="a/3x3/SBLS/U-_DB">										
+																						<img src="icube.php?n=3&fl=llllllllgllwgllgololllooloollwgllgololllooloo&d=0" />
+																					
+										<h3>U- DB</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' M2 U' R U2 R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+M2+U%27+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_DB">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="948">
+																				
+																				<a href="a/3x3/SBLS/U-_DF">										
+																						<img src="icube.php?n=3&fl=llllllllgllwgllgllolllooloollwgllgllolllooloo&d=0" />
+																					
+										<h3>U- DF</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U M' r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+M%27+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U M2 R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+M2+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_DF">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="949">
+																				
+																				<a href="a/3x3/SBLS/U-_UB-">										
+																						<img src="icube.php?n=3&fl=lollllllgllwgllgllolllooloollwgllgllolllooloo&d=0" />
+																					
+										<h3>U- UB-</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														M2 U r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M2+U+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_UB-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="950">
+																				
+																				<a href="a/3x3/SBLS/U-_UR-">										
+																						<img src="icube.php?n=3&fl=lllllollgllwgllgllogllooloollwgllgllogllooloo&d=0" />
+																					
+										<h3>U- UR-</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' M2 U2 r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+M2+U2+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_UR-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="951">
+																				
+																				<a href="a/3x3/SBLS/U-_UF-">										
+																						<img src="icube.php?n=3&fl=llllllloglgwgllgllolllooloolgwgllgllolllooloo&d=0" />
+																					
+										<h3>U- UF-</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														M U' M2 U2 R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M+U%27+M2+U2+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U2 M2 U' r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+M2+U%27+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_UF-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="952">
+																				
+																				<a href="a/3x3/SBLS/U-_UL-">										
+																						<img src="icube.php?n=3&fl=lllollllgllwgllgllolllooloollwgllgllolllooloo&d=0" />
+																					
+										<h3>U- UL-</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U M R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+M+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_UL-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="953">
+																				
+																				<a href="a/3x3/SBLS/U-_FR-">										
+																						<img src="icube.php?n=3&fl=llllllllgllwglogllollgooloollwglogllollgooloo&d=0" />
+																					
+										<h3>U- FR-</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U2 R U M' U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U2+R+U+M%27+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_FR-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="954">
+																				
+																				<a href="a/3x3/SBLS/U-_DB-">										
+																						<img src="icube.php?n=3&fl=llllllllgllwgllgglolllooloollwgllgglolllooloo&d=0" />
+																					
+										<h3>U- DB-</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_DB-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on U misoriented" >
+									<div class="algdesc" data-algid="955">
+																				
+																				<a href="a/3x3/SBLS/U-_DF-">										
+																						<img src="icube.php?n=3&fl=llllllllgllwgllgllolllooloollwgllgllolllooloo&d=0" />
+																					
+										<h3>U- DF-</h3>
+										<h5>Corner on U misoriented</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' M U' R U2 R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+M+U%27+R+U2+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/U-_DF-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D solved" >
+									<div class="algdesc" data-algid="956">
+																				
+																				<a href="a/3x3/SBLS/D_U">										
+																						<img src="icube.php?n=3&fl=lllllgllllllgllglglollooooolllgllglglollooooo&d=0" />
+																					
+										<h3>D U</h3>
+										<h5>Corner on D solved</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' r U' M U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+r+U%27+M+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D_U">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D solved" >
+									<div class="algdesc" data-algid="957">
+																				
+																				<a href="a/3x3/SBLS/D_DB">										
+																						<img src="icube.php?n=3&fl=llllllllllllgllglgllllooooolllgllglgllllooooo&d=0" />
+																					
+										<h3>D DB</h3>
+										<h5>Corner on D solved</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U M' U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U+M%27+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D_DB">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D solved" >
+									<div class="algdesc" data-algid="958">
+																				
+																				<a href="a/3x3/SBLS/D_DF">										
+																						<img src="icube.php?n=3&fl=llllllllllllgllgogllllooooolllgllgogllllooooo&d=0" />
+																					
+										<h3>D DF</h3>
+										<h5>Corner on D solved</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U' M2 U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+M2+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D_DF">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D solved" >
+									<div class="algdesc" data-algid="959">
+																				
+																				<a href="a/3x3/SBLS/D_U-">										
+																						<img src="icube.php?n=3&fl=lllllollllllgllglglgllooooolllgllglglgllooooo&d=0" />
+																					
+										<h3>D U-</h3>
+										<h5>Corner on D solved</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' r U M2 U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+r+U+M2+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D_U-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D solved" >
+									<div class="algdesc" data-algid="960">
+																				
+																				<a href="a/3x3/SBLS/D_FR-">										
+																						<img src="icube.php?n=3&fl=llllllllllllgloglglllgooooolllgloglglllgooooo&d=0" />
+																					
+										<h3>D FR-</h3>
+										<h5>Corner on D solved</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U M U2 M2 U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U+M+U2+M2+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U' M2 U2 M' U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+M2+U2+M%27+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D_FR-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D solved" >
+									<div class="algdesc" data-algid="961">
+																				
+																				<a href="a/3x3/SBLS/D_DB-">										
+																						<img src="icube.php?n=3&fl=llllllllllllgllglgllllooooolllgllglgllllooooo&d=0" />
+																					
+										<h3>D DB-</h3>
+										<h5>Corner on D solved</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U' M U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+M+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D_DB-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D solved" >
+									<div class="algdesc" data-algid="962">
+																				
+																				<a href="a/3x3/SBLS/D_DF-">										
+																						<img src="icube.php?n=3&fl=llllllllllllgllgggllllooooolllgllgggllllooooo&d=0" />
+																					
+										<h3>D DF-</h3>
+										<h5>Corner on D solved</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U M' U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U+M%27+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D_DF-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing forward" >
+									<div class="algdesc" data-algid="963">
+																				
+																				<a href="a/3x3/SBLS/D%2B_U">										
+																						<img src="icube.php?n=3&fl=lllllgllllllgllglwlolloogoolllgllglwlolloogoo&d=0" />
+																					
+										<h3>D+ U</h3>
+										<h5>Corner on D facing forward</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U' R2 F R F' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+R2+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U' R' U R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+R%27+U+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D%2B_U">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing forward" >
+									<div class="algdesc" data-algid="964">
+																				
+																				<a href="a/3x3/SBLS/D%2B_FR">										
+																						<img src="icube.php?n=3&fl=llllllllllllglgglwlllooogoolllglgglwlllooogoo&d=0" />
+																					
+										<h3>D+ FR</h3>
+										<h5>Corner on D facing forward</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U' R' U' R U R' U2' R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+R%27+U%27+R+U+R%27+U2%27+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U' R' U2 M U' r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+R%27+U2+M+U%27+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D%2B_FR">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing forward" >
+									<div class="algdesc" data-algid="965">
+																				
+																				<a href="a/3x3/SBLS/D%2B_DB">										
+																						<img src="icube.php?n=3&fl=llllllllllllgllglwlllloogoolllgllglwlllloogoo&d=0" />
+																					
+										<h3>D+ DB</h3>
+										<h5>Corner on D facing forward</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U' R' U r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U%27+R%27+U+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D%2B_DB">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing forward" >
+									<div class="algdesc" data-algid="966">
+																				
+																				<a href="a/3x3/SBLS/D%2B_DF">										
+																						<img src="icube.php?n=3&fl=llllllllllllgllgowlllloogoolllgllgowlllloogoo&d=0" />
+																					
+										<h3>D+ DF</h3>
+										<h5>Corner on D facing forward</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														M2 U R U' R2 F R F' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M2+U+R+U%27+R2+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M2 U R U' R' U R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M2+U+R+U%27+R%27+U+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D%2B_DF">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing forward" >
+									<div class="algdesc" data-algid="967">
+																				
+																				<a href="a/3x3/SBLS/D%2B_U-">										
+																						<img src="icube.php?n=3&fl=lllllollllllgllglwlglloogoolllgllglwlglloogoo&d=0" />
+																					
+										<h3>D+ U-</h3>
+										<h5>Corner on D facing forward</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U' R U' R' F' U' F 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U%27+R+U%27+R%27+F%27+U%27+F"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U M' U R U' R2 F R F' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+M%27+U+R+U%27+R2+F+R+F%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														U M' U R U' R' U R U' R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+M%27+U+R+U%27+R%27+U+R+U%27+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D%2B_U-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing forward" >
+									<div class="algdesc" data-algid="968">
+																				
+																				<a href="a/3x3/SBLS/D%2B_FR-">										
+																						<img src="icube.php?n=3&fl=llllllllllllgloglwlllgoogoolllgloglwlllgoogoo&d=0" />
+																					
+										<h3>D+ FR-</h3>
+										<h5>Corner on D facing forward</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U' r' M U r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U%27+r%27+M+U+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D%2B_FR-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing forward" >
+									<div class="algdesc" data-algid="969">
+																				
+																				<a href="a/3x3/SBLS/D%2B_DB-">										
+																						<img src="icube.php?n=3&fl=llllllllllllgllggwlllloogoolllgllggwlllloogoo&d=0" />
+																					
+										<h3>D+ DB-</h3>
+										<h5>Corner on D facing forward</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U' R' U r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+R%27+U+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D%2B_DB-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing forward" >
+									<div class="algdesc" data-algid="970">
+																				
+																				<a href="a/3x3/SBLS/D%2B_DF-">										
+																						<img src="icube.php?n=3&fl=llllllllllllgllglwlllloogoolllgllglwlllloogoo&d=0" />
+																					
+										<h3>D+ DF-</h3>
+										<h5>Corner on D facing forward</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U' r' U2 M U' r U' r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U%27+r%27+U2+M+U%27+r+U%27+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D%2B_DF-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing side" >
+									<div class="algdesc" data-algid="971">
+																				
+																				<a href="a/3x3/SBLS/D-_U">										
+																						<img src="icube.php?n=3&fl=lllllgllllllgllglololloowoolllgllglololloowoo&d=0" />
+																					
+										<h3>D- U</h3>
+										<h5>Corner on D facing side</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U R' U' R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U+R%27+U%27+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D-_U">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing side" >
+									<div class="algdesc" data-algid="972">
+																				
+																				<a href="a/3x3/SBLS/D-_FR">										
+																						<img src="icube.php?n=3&fl=llllllllllllglgglolllooowoolllglgglolllooowoo&d=0" />
+																					
+										<h3>D- FR</h3>
+										<h5>Corner on D facing side</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U r' U M' U2 R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U+r%27+U+M%27+U2+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D-_FR">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing side" >
+									<div class="algdesc" data-algid="973">
+																				
+																				<a href="a/3x3/SBLS/D-_DB">										
+																						<img src="icube.php?n=3&fl=llllllllllllgllgoolllloowoolllgllgoolllloowoo&d=0" />
+																					
+										<h3>D- DB</h3>
+										<h5>Corner on D facing side</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U r' U' r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U+r%27+U%27+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D-_DB">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing side" >
+									<div class="algdesc" data-algid="974">
+																				
+																				<a href="a/3x3/SBLS/D-_DF">										
+																						<img src="icube.php?n=3&fl=llllllllllllgllglolllloowoolllgllglolllloowoo&d=0" />
+																					
+										<h3>D- DF</h3>
+										<h5>Corner on D facing side</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														R U2 r' U2 r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U2+r%27+U2+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D-_DF">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing side" >
+									<div class="algdesc" data-algid="975">
+																				
+																				<a href="a/3x3/SBLS/D-_U-">										
+																						<img src="icube.php?n=3&fl=lllllollllllgllglolglloowoolllgllglolglloowoo&d=0" />
+																					
+										<h3>D- U-</h3>
+										<h5>Corner on D facing side</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														U R U R' U' r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=U+R+U+R%27+U%27+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D-_U-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing side" >
+									<div class="algdesc" data-algid="976">
+																				
+																				<a href="a/3x3/SBLS/D-_FR-">										
+																						<img src="icube.php?n=3&fl=llllllllllllgloglolllgoowoolllgloglolllgoowoo&d=0" />
+																					
+										<h3>D- FR-</h3>
+										<h5>Corner on D facing side</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														r U r' U' M' r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=r+U+r%27+U%27+M%27+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D-_FR-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing side" >
+									<div class="algdesc" data-algid="977">
+																				
+																				<a href="a/3x3/SBLS/D-_DB-">										
+																						<img src="icube.php?n=3&fl=llllllllllllgllggolllloowoolllgllggolllloowoo&d=0" />
+																					
+										<h3>D- DB-</h3>
+										<h5>Corner on D facing side</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														M' U' R U R' U' R U R' U' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M%27+U%27+R+U+R%27+U%27+R+U+R%27+U%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														R U2 R' M' U2 R U R' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=R+U2+R%27+M%27+U2+R+U+R%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+																								
+														<li class="algorithmnotation">
+														M R U2 r' U2 r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M+R+U2+r%27+U2+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D-_DB-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+															<div class="singlealg" data-subgroup="Corner on D facing side" >
+									<div class="algdesc" data-algid="978">
+																				
+																				<a href="a/3x3/SBLS/D-_DF-">										
+																						<img src="icube.php?n=3&fl=llllllllllllgllglolllloowoolllgllglolllloowoo&d=0" />
+																					
+										<h3>D- DF-</h3>
+										<h5>Corner on D facing side</h5>
+										</a>
+										
+																			</div>
+									<div class="alglist">
+										<ul>
+																						
+														<li class="algorithmnotation">
+														M' r U r' U' r U r' 
+														<a href="http://alg.cubing.net/?stage=SBLS&type=alg&puzzle=3x3x3&alg=M%27+r+U+r%27+U%27+r+U+r%27"  target="_blank">
+														<i class="fa fa-link" aria-hidden="true"></i></a></li>
+														
+											<li style="margin-top: 0.5rem;"><a class="more" href="a/3x3/SBLS/D-_DF-">	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>More Algorithms</a></li>
+										</ul>
+										
+									</div>
+									
+																	</div>
+								
+										
+		</div>
+		<div class="footer">
+<p>Created by Gil Zussman</p>
+<p>Please send any bug reports and feedback to <a href="mailto:gil@speedcubedb.com">gil@speedcubedb.com</a></p>
+<p><a href="privacypolicy.php">Privacy Policy</a></p>
+</div>		
+	</body>
+</html>
