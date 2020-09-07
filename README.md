@@ -26,6 +26,11 @@
 - [魔方根整理CMLL](CubeRootCMLL.html)
 - [Kian Mansour整理CMLL](KianMansourCMLL.html)
 - [CMLL打印](CMLLPrint.html)
+- CubeSkills C
+[F](/doc/f2l-algorithms-different-slot-positions.pdf)
+[O](/doc/oll-algorithms.pdf)
+[P](/doc/pll-algorithms.pdf)
+公式
 
 ## 说明
 - 个人学习魔方所用的资料，均由网上资料精简汇总整合而成。
