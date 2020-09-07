@@ -5,11 +5,16 @@ import urllib.parse
 
 url_list = ['http://cubesolv.es/?query=+Kian+Mansour', 'http://cubesolv.es/?query=Alexander+Lau',
             'http://cubesolv.es/?query=Alexander%20Lau&page=2', 'http://cubesolv.es/?query=Sean+Patrick+Villanueva']
-with open('RouxExample.html', mode='w', encoding='utf-8') as f:
+url_list = ['http://cubesolv.es/?query=Sean+Patrick+Villanueva']
+name = 'Sean Patrick Villanueva'
+
+with open('%sExample.html' % name.replace(' ', ''), mode='w', encoding='utf-8') as f:
     h = """
-        <title>桥式实例</title>
+        <title>%s Example</title>
         <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico">
-    """
+        <a href="/MyCubeData">HOME</a>
+        <br><br>
+    """ % name
     f.write(h)
 no = 1
 for u in url_list:
@@ -42,7 +47,7 @@ for u in url_list:
         solution_u = solution_u.replace('//', '%2F%2F')
         url = url % (scramble_u, solution_u, title_u)
         print(ud)
-        with open('RouxExample.html', mode='a', encoding='utf-8') as f:
+        with open('%sExample.html' % name.replace(' ', ''), mode='a', encoding='utf-8') as f:
             h = """
                 <h2 id='%d'>%d | %s</h2>
                 <h3><a href = '%s' target="_blank">Scramble</a> %s</h3>

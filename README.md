@@ -1,6 +1,8 @@
 # 魔方资料
-## [Roux实例演示](RouxExample.html)  
-
+## 实例演示
+- [Kian Mansour](KianMansourExample.html)
+- [Alexander Lau](AlexanderLauExample.html)
+- [Sean Patrick Villanueva](SeanPatrickVillanuevaExample.html)
 ## 公式
 
 ### Speed Cube DB 首条公式
@@ -34,11 +36,10 @@
 [GAN说明书](/doc/gancfop.jpg)
 - [最小步](/doc/fmccn.pdf)
 
-## 说明
-- 个人学习魔方所用的资料，由网上资料精简汇总整合而成。
-- 公式文档来源见水印
-- 汇总文字公式来源[speedcubedb](http://www.speedcubedb.com)。  
-- Roux实例演示为[cubesolv](http://cubesolv.es/)上搜索Sean Patrick Villanueva、Kian Mansour、Alexander Lau结果汇总 
+## 来源说明
+- 公式文档及图片来源见水印
+- 文字公式来源[speedcubedb](http://www.speedcubedb.com)。  
+- 实例来源[cubesolv](http://cubesolv.es/)  
 - 文字公式与实例的在线演示来自项目[alg.cubing.net](https://github.com/cubing/alg.cubing.net)并做部分修改
     - 支持黄顶绿前预览
     - 进入页面显示初始状态
