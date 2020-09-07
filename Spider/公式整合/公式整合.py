@@ -9,7 +9,7 @@ import os
 getimg = False
 getdetail = False
 # show，showfull，print
-htmltype = 'showfull'
+htmltype = 'show'
 source = 'OLL'
 
 with open(os.path.abspath('.') + '/Spider/公式整合/%s.html' % source, 'r') as f:
