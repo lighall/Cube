@@ -117,6 +117,8 @@ html = """
 <table>
 %s
 </table>
+<br>
+<a href="/MyCubeData">HOME</a>
 """ % (source, tr)
 if htmltype == 'print':
     html = """
