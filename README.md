@@ -23,7 +23,7 @@ CFOP|完整版|[F2L](F2LFull.html)|[OLL](OLLFull.html)|[PLL](PLLFull.html)
 |-|-|-|-|-|
 Roux|[Kian Mansour CMLL](KianMansourCMLL.html)|[魔方根 CMLL](CubeRootCMLL.html)|[打印版 CMLL](CMLLPrint.html)|[基础公式](RouxBase.html)
 CFOP|[CubeSkills F2L](/doc/f2l-algorithms-different-slot-positions.pdf)|[CubeSkills OLL](/doc/oll-algorithms.pdf)|[CubeSkills PLL](/doc/pll-algorithms.pdf)|[GAN CFOP](GANCFOP.html)
-FMC| [ FMC Tutorial CN](/doc/fmccn.pdf)
+FMC| [FMC Tutorial CN](/doc/fmccn.pdf)
 
 ## 来源说明
 
