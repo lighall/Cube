@@ -1,5 +1,7 @@
 # 魔方资料
+
 ## 实例演示
+
 - [Kian Mansour](KianMansourExample.html)  
 - [Alexander Lau](AlexanderLauExample.html)  
 - [Sean Patrick Villanueva](SeanPatrickVillanuevaExample.html)  
@@ -21,9 +23,10 @@ CFOP|完整版|[F2L](F2LFull.html)|[OLL](OLLFull.html)|[PLL](PLLFull.html)
 |-|-|-|-|-|
 Roux|[Kian Mansour CMLL](KianMansourCMLL.html)|[魔方根 CMLL](CubeRootCMLL.html)|[打印稿 CMLL](CMLLPrint.html)|[基础 CMLL](RouxBase.html)
 CFOP|[CubeSkills F2L](/doc/f2l-algorithms-different-slot-positions.pdf)|[CubeSkills OLL](/doc/oll-algorithms.pdf)|[CubeSkills PLL](/doc/pll-algorithms.pdf)|[GAN](/doc/gancfop.jpg)
-FMC| [ FMC Tutorial CN](/doc/fmccn.pdf)|　　|　　|　　
+FMC| [ FMC Tutorial CN](/doc/fmccn.pdf)
 
 ## 来源说明
+
 - 公式文档及图片来源见水印
 - 文字公式来源[speedcubedb](http://www.speedcubedb.com)。  
 - 实例来源[cubesolv](http://cubesolv.es/)  
